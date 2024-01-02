@@ -3,3 +3,5 @@
 # apache-airflow-providers-google==10.7.0
 astronomer-cosmos[dbt-bigquery]
 protobuf
+requests
+pandas
