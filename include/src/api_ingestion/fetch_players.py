@@ -4,7 +4,7 @@ import os
 
 from api_credentials import RAPID_API__KEY, RAPID_API__HOST
 
-def fetch_and_save_players_to_csv(players_csv_file_path):
+def fetch_and_save_players_data(players_csv_file_path):
 
     url = "https://api-nba-v1.p.rapidapi.com/players"
 
@@ -52,6 +52,6 @@ def fetch_and_save_players_to_csv(players_csv_file_path):
     # Write the Parquet file to the specified folder
     ref_df.to_csv(players_csv_file_path, index=False)
 
-
-players_csv_file_path = 'include/raw-datasets/players.csv'
-fetch_and_save_players_to_csv(players_csv_file_path)
+# # Example usage
+# players_csv_file_path = 'include/raw_datasets/players.csv'
+# fetch_and_save_players_data(players_csv_file_path)

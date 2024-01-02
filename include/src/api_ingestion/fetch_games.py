@@ -4,7 +4,7 @@ import os
 
 from api_credentials import RAPID_API__KEY, RAPID_API__HOST
 
-def fetch_and_save_games_data_csv(csv_file_path):
+def fetch_and_save_games_data(csv_file_path):
     """
     This function will fetch only Dallas games. The data will be used to get new games later. 
     """
@@ -66,6 +66,6 @@ def fetch_and_save_games_data_csv(csv_file_path):
     # Save the data as a CSV file
     ref_df.to_csv(csv_file_path, index=False)
 
-# # Example usage:
-csv_file_path = "include/raw-datasets/games.csv"
-fetch_and_save_games_data_csv(csv_file_path)
+# # # Example usage:
+# csv_file_path = "include/raw_datasets/games.csv"
+# fetch_and_save_games_data(csv_file_path)

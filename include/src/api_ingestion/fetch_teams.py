@@ -4,7 +4,7 @@ import os
 
 from api_credentials import RAPID_API__KEY, RAPID_API__HOST
 
-def fetch_and_save_teams_to_csv(csv_file_path):
+def fetch_and_save_teams_data(csv_file_path):
     # Set the API endpoint and headers for the API-NBA
     url = "https://api-nba-v1.p.rapidapi.com/teams"
 
@@ -41,5 +41,5 @@ def fetch_and_save_teams_to_csv(csv_file_path):
     ref_df.to_csv(csv_file_path, index=False)
 
 
-
-# fetch_and_save_teams_to_csv('include/raw-datasets/teams.csv')
+# # Example usage
+# fetch_and_save_teams_data('include/raw_datasets/teams.csv')
