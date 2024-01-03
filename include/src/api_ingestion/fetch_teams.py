@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 import os
 
-from api_credentials import RAPID_API__KEY, RAPID_API__HOST
+from include.src.api_ingestion.api_credentials import RAPID_API__KEY, RAPID_API__HOST  # Import API credentials
 
 def fetch_and_save_teams_data(csv_file_path):
     # Set the API endpoint and headers for the API-NBA
