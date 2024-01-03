@@ -3,7 +3,7 @@ import pandas as pd
 
 from include.src.api_ingestion.api_credentials import RAPID_API__KEY, RAPID_API__HOST  # Import API credentials
 
-def get_game_total_stats(game_id):
+def get_players_game_stats(game_id):
     """
     Fetches game statistics based on a game ID using a RapidAPI endpoint.
     Args:
@@ -11,9 +11,9 @@ def get_game_total_stats(game_id):
     Returns:
     - JSON response containing game statistics.
     """
-    url = "https://api-nba-v1.p.rapidapi.com/games/statistics"
+    url = "https://api-nba-v1.p.rapidapi.com/players/statistics"
 
-    params = {"id": f"{game_id}"}
+    params = {"game": f"{game_id}"}
 
     headers = {
         "X-RapidAPI-Key": RAPID_API__KEY,
@@ -24,7 +24,7 @@ def get_game_total_stats(game_id):
 
     return response.json()['response']
 
-def fetch_and_update_game_stats(games_csv, games_stats_csv):
+def fetch_and_update_players_game_stats(games_csv, games_stats_csv):
     """
     Fetches game statistics for games that are finished but not already in the existing game statistics DataFrame.
     Updates the games_stats_df DataFrame with new game statistics.
@@ -51,33 +51,33 @@ def fetch_and_update_game_stats(games_csv, games_stats_csv):
 
         # Fetch stats for games and update the DataFrame
         for game_id in diff_game_ids:
-            data = get_game_total_stats(game_id=game_id)
+            data = get_players_game_stats(game_id=game_id)
 
             df = pd.DataFrame(data)
-            df['game_id'] = game_id
+            
+            df['player_id'] = df['player'].apply(pd.Series)[['id']]
+            df['game_id'] = df['game'].apply(pd.Series)[['id']]
+            df['team_id'] = df['team'].apply(pd.Series)[['id']]
 
-            df['team_id'] = df['team'].apply(pd.Series).loc[:, 'id']
+            new_df = df[['player_id', 'game_id', 'team_id']]
+            second_df = df.iloc[:, 3:-3]
 
-            stats_df = df['statistics'].apply(pd.Series)[0].apply(pd.Series)
-
-            ref_df = pd.concat(
-                [df, stats_df],
-                axis=1,
-                join='inner'
-            )
+            ref_df = pd.concat([new_df, second_df],
+                            axis=1,
+                            join='inner'
+                            )
 
             df_list.append(ref_df)
 
         concatenated_df = pd.concat(df_list, axis=0)
         final_df = concatenated_df.sort_values(by='game_id')
-        final_df.drop(['team', 'statistics'], axis=1, inplace=True)
 
         # Update the existing game statistics DataFrame
-        return final_df.to_csv("include/raw_datasets/total_game_stats.csv", index=False)
+        return final_df.to_csv("include/raw_datasets/players_game_stats.csv", index=False)
 
 
 games_df = 'include/raw_datasets/games.csv'
-games_stats_df = 'include/raw_datasets/total_game_stats.csv'
+games_stats_df = 'include/raw_datasets/players_game_stats.csv'
 
 # Call the function to fetch and update game stats
-# fetch_and_update_game_stats(games_df, games_stats_df)
+# fetch_and_update_players_game_stats(games_df, games_stats_df)

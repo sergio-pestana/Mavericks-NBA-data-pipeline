@@ -4,9 +4,9 @@ import pandas as pd
 from api_credentials import RAPID_API__KEY, RAPID_API__HOST
 
 def get_game_total_stats(game_id):
-	url = "https://api-nba-v1.p.rapidapi.com/games/statistics"
+	url = "https://api-nba-v1.p.rapidapi.com/players/statistics"
 
-	params = {"id": f"{game_id}"}
+	params = {"game": f"{game_id}"}
 
 	headers = {
 		"X-RapidAPI-Key": RAPID_API__KEY,
@@ -37,20 +37,22 @@ else:
 		df = pd.DataFrame(data)
 		df['game_id'] = id
 
-		df['team_id'] = df['team'].apply(pd.Series).loc[:,'id']
+		df['player_id'] = df['player'].apply(pd.Series)[['id']]
+		df['game_id'] = df['game'].apply(pd.Series)[['id']]
+		df['team_id'] = df['team'].apply(pd.Series)[['id']]
 
-		stats_df = df['statistics'].apply(pd.Series)[0].apply(pd.Series)
+		new_df = df[['player_id', 'game_id', 'team_id']]
+		second_df = df.iloc[:, 3:-3]
 
-		ref_df = pd.concat(
-							[df, stats_df],
-							axis=1,
-							join='inner'
+		ref_df = pd.concat([new_df, second_df],
+						axis=1,
+						join='inner'
 						)
 
 		df_list.append(ref_df)
 
 	concatenated_df = pd.concat(df_list, axis=0)
 	final_df = concatenated_df.sort_values(by='game_id')
-	final_df.drop(['team', 'statistics'], axis=1, inplace=True)
 
-	final_df.to_csv("include/raw_datasets/games_stats.csv", index=False)
+
+	final_df.to_csv("include/raw_datasets/players_game_stats.csv", index=False)
