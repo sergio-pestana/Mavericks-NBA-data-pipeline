@@ -1,0 +1,23 @@
+id,firstname,lastname,college,affiliation,birth_date,birth_country,nba_start,nba_pro,height_feets,height_inches,height_meters,weight_pounds,weight_kilograms,jersey,active,pos
+246,Richaun,Holmes,Bowling Green,Bowling Green/USA,1993-10-15,USA,2015,6,6,10,2.08,235,106.6,22,True,F
+283,Derrick,Jones Jr.,UNLV,UNLV/USA,1997-02-15,USA,2016,5,6,6,1.98,210,95.3,5,True,F
+817,Maxi,Kleber,Bayern Munich,Bayern Munich/Germany,1992-01-29,Germany,2017,4,6,10,2.08,240,108.9,42,True,F
+963,Luka,Doncic,Real Madrid,Real Madrid/Slovenia,1999-02-28,Slovenia,2018,3,6,7,2.01,230,104.3,77,True,F-G
+1901,Grant,Williams,Tennessee,Tennessee/USA,1998-11-30,USA,2019,2,6,6,1.98,236,107.0,12,True,F
+2593,Josh,Green,Arizona,Arizona/Australia,2000-11-16,Australia,2020,1,6,5,1.96,200,90.7,8,True,G
+3398,Brandon,Williams,Arizona,Arizona/USA,1999-11-22,USA,2021,0,6,2,1.88,190,86.2,8,True,G
+2795,Greg,Brown III,Texas,Texas/USA,2001-09-01,USA,2021,0,6,7,2.01,206,93.4,4,True,F
+2862,Joe,Wieskamp,Iowa,Iowa/USA,1999-08-23,USA,2021,0,6,6,1.98,205,93.0,15,True,G-F
+2890,A.J.,Lawson,South Carolina,South Carolina/Canada,2000-07-15,Canada,0,0,6,6,1.98,180,81.6,5,True,G
+3407,Jaden,Hardy,,,,,0,0,,,,,,3,True,G
+3959,Dexter,Dennis,Texas A&M,,,,0,0,6,,,210,,38,True,G
+3960,OlivierMaxence,Prosper,Marquette,,,,0,0,6,,,215,,18,True,F
+3961,Jordan,Walker,UAB,,,,0,0,5,,,170,,16,True,SG
+4044,Dereck II,Lively,Duke,,,,0,0,7,,,234,,2,True,C
+4045,Mike Jr.,Miles,TCU,,,,0,0,6,,,205,,14,True,G
+261,Kyrie,Irving,Duke,Duke/Australia,1992-03-23,Australia,2011,10,6,2,1.88,195,88.5,11,True,G
+374,Markieff,Morris,Kansas,Kansas/USA,1989-09-02,USA,2011,10,6,9,2.06,245,111.1,13,True,F
+215,Tim,Hardaway Jr.,Michigan,Michigan/USA,1992-03-16,USA,2013,8,6,5,1.96,205,93.0,11,True,G-F
+123,Seth,Curry,Duke,Duke/USA,1990-08-23,USA,2013,7,6,2,1.88,185,83.9,30,True,G
+433,Dwight,Powell,Stanford,Stanford/Canada,1991-07-20,Canada,2014,7,6,10,2.08,240,108.9,7,True,F-C
+164,Dante,Exum,,,,,0,0,,,,,,5,False,
