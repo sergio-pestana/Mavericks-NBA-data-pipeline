@@ -5,8 +5,9 @@ from datetime import datetime
 from datetime import timedelta
 
 from include.src.api_ingestion.fetch_games import fetch_and_save_games_data
-from include.src.api_ingestion.fetch_players import fetch_and_save_players_data
-from include.src.api_ingestion.fetch_teams import fetch_and_save_teams_data
+from include.src.api_ingestion.fetch_game_stats import fetch_and_update_game_stats 
+# from include.src.api_ingestion.fetch_players import fetch_and_save_players_data
+# from include.src.api_ingestion.fetch_teams import fetch_and_save_teams_data
 
 from airflow.providers.google.cloud.transfers.local_to_gcs import LocalFilesystemToGCSOperator
 
@@ -30,6 +31,17 @@ def games():
         python_callable=fetch_and_save_games_data,
         op_args=['include/raw_datasets/games.csv'],
     )
+
+    fetch_game_stats_task = PythonOperator(
+        task_id='fetch_game_stats_task',
+        python_callable=fetch_and_update_game_stats,
+        op_args=['include/raw_datasets/games.csv', 'include/raw_datasets/games_stats.csv'],
+    )
+
+    chain(
+        fetch_games_task,
+        fetch_game_stats_task
+          )
 
 
 games()
