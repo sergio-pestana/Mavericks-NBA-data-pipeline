@@ -28,6 +28,7 @@ def fetch_and_save_games_data(csv_file_path):
     # Simple data transformation
 
     date_df = df['date'].apply(pd.Series)
+    date_df['Year'] = date_df['start'].str[:4]
     date_df.columns = ['game_' + sub for sub in date_df.columns] 
 
     status_df = df['status'].apply(pd.Series)
@@ -66,6 +67,6 @@ def fetch_and_save_games_data(csv_file_path):
     # Save the data as a CSV file
     ref_df.to_csv(csv_file_path, index=False)
 
-# # # Example usage:
-# csv_file_path = "include/raw_datasets/games.csv"
-# fetch_and_save_games_data(csv_file_path)
+# # Example usage:
+csv_file_path = "include/raw_datasets/games.csv"
+fetch_and_save_games_data(csv_file_path)
