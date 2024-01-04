@@ -2,7 +2,7 @@
 
 name: 'mavs_data_pipeline'
 
-profile: 'raw'
+profile: 'maverics_dw'
 
 models:
   raw:

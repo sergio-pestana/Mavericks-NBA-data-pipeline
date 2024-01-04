@@ -1,6 +1,6 @@
 # profiles.yml
 
-raw:
+maverics_dw:
  target: dev
  outputs:
   dev:
