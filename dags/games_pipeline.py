@@ -37,8 +37,8 @@ def games():
         op_args=['include/raw_datasets/games.csv', 'include/raw_datasets/players_game_stats.csv'],
     )
 
-    trigger_target = TriggerDagRunOperator(
-        task_id='trigger_target',
+    trigger_gcs = TriggerDagRunOperator(
+        task_id='trigger_gcs',
         trigger_dag_id='cloud_pipeline'
     )
 
@@ -46,7 +46,7 @@ def games():
         fetch_games_task,
         fetch_game_stats_task,
         fetch_players_game_stats_task,
-        trigger_target
+        trigger_gcs
           )
 
 games()

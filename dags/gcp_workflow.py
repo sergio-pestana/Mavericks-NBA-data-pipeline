@@ -4,6 +4,7 @@ from datetime import datetime
 from datetime import timedelta
 
 from airflow.providers.google.cloud.transfers.local_to_gcs import LocalFilesystemToGCSOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from astro import sql as aql
 from astro.files import File
@@ -105,6 +106,11 @@ def cloud_pipeline():
         from include.soda.check_function import check
 
         return check(scan_name, checks_subpath, data_source='raw')
+    
+    trigger_dbt = TriggerDagRunOperator(
+        task_id='trigger_dbt',
+        trigger_dag_id='dbt_pipeline'
+    )
 
     chain(
         upload_games_to_gcs,
@@ -113,7 +119,8 @@ def cloud_pipeline():
         games_gcs_to_bronze,
         players_game_stats_gcs_to_bronze,
         total_game_stats_gcs_to_bronze,
-        check_load()
+        check_load(),
+        trigger_dbt
     )
 
 cloud_pipeline()
