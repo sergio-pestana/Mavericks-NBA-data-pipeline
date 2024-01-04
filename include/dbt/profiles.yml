@@ -1,0 +1,14 @@
+# profiles.yml
+
+raw:
+ target: dev
+ outputs:
+  dev:
+    type: bigquery
+    method: service-account
+    keyfile: /usr/local/airflow/include/gcp/service_account.json
+    project: mavericks-data-pipeline
+    dataset: raw
+    threads: 1
+    timeout_seconds: 300
+    location: US

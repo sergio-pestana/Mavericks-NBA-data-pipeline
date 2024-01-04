@@ -1,0 +1,32 @@
+data_source raw:
+  type: bigquery
+  connection:
+    account_info_json_path: /usr/local/airflow/include/gcp/service_account.json
+    auth_scopes:
+    - https://www.googleapis.com/auth/bigquery
+    - https://www.googleapis.com/auth/cloud-platform
+    - https://www.googleapis.com/auth/drive
+    project_id: 'mavericks-data-pipeline'
+    dataset: raw
+
+# data_source silver:
+#   type: bigquery
+#   connection:
+#     account_info_json_path: /usr/local/airflow/include/gcp/service_account.json
+#     auth_scopes:
+#     - https://www.googleapis.com/auth/bigquery
+#     - https://www.googleapis.com/auth/cloud-platform
+#     - https://www.googleapis.com/auth/drive
+#     project_id: 'nba-api-pipeline'
+#     dataset: silver
+
+# data_source gold:
+#   type: bigquery
+#   connection:
+#     account_info_json_path: /usr/local/airflow/include/gcp/service_account.json
+#     auth_scopes:
+#     - https://www.googleapis.com/auth/bigquery
+#     - https://www.googleapis.com/auth/cloud-platform
+#     - https://www.googleapis.com/auth/drive
+#     project_id: 'nba-api-pipeline'
+#     dataset: gold

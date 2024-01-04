@@ -44,6 +44,8 @@ def fetch_and_update_players_game_stats(games_csv, games_stats_csv):
     # Find games that need stats to be fetched
     diff_game_ids = list(set(finished_games_list) - set(game_stats_filled))
 
+    print(f"{len(diff_game_ids)} games added.")
+
     if len(diff_game_ids) == 0:
         print("All games were fetched.")
     else:

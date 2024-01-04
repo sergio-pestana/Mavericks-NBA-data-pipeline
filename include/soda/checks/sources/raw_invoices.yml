@@ -1,0 +1,40 @@
+checks for raw_games:
+  - duplicate_count(id) = 0
+  - schema:
+      warn:
+        when schema changes: any
+      fail:
+        when required column missing: [id, league, season, game_start, game_end, game_duration,
+                                      game_Year, status_clock, status_halftime, status_short,
+                                      status_long, period_current, period_total, period_endOfPeriod,
+                                      arena_name, arena_city, arena_state, arena_country,
+                                      visitor_id, home_id, visitor_score_win, visitor_score_loss,
+                                      visitor_score_series, visitor_score_linescore,
+                                      visitor_score_points, home_score_win, home_score_loss,
+                                      home_score_series, home_score_linescore, home_score_points]
+
+
+checks for raw_players_game_stats:
+  - missing_count(player_id) = 0
+  - missing_count(game_id) = 0
+  - schema:
+      warn:
+        when schema changes: any
+      fail:
+        when required column missing: [player_id, game_id, team_id, points, pos, min, fgm, fga,
+                                      fgp, ftm, fta, ftp, tpm, tpa, tpp, offReb, defReb,
+                                      totReb, assists, pFouls, steals, turnovers, blocks,
+                                      plusMinus, comment]
+
+        
+checks for raw_total_game_stats:
+  - missing_count(game_id) = 0
+  - schema:
+      warn:
+        when schema changes: any
+      fail:
+        when required column missing: [game_id, team_id, fastBreakPoints, pointsInPaint, biggestLead,
+                                      secondChancePoints, pointsOffTurnovers, longestRun, points,
+                                      fgm, fga, fgp, ftm, fta, ftp, tpm, tpa, tpp, offReb,
+                                      defReb, totReb, assists, pFouls, steals, turnovers,
+                                      blocks, plusMinus, min]

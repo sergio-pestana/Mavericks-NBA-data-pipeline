@@ -1,5 +1,4 @@
 from airflow.decorators import dag, task
-from airflow.operators.python import PythonOperator
 from airflow.models.baseoperator import chain
 from datetime import datetime
 from datetime import timedelta
@@ -101,13 +100,20 @@ def cloud_pipeline():
         use_native_support=False,
     )
 
+    @task.external_python(python='/usr/local/airflow/soda_venv/bin/python')
+    def check_load(scan_name='check_load', checks_subpath='sources'):
+        from include.soda.check_function import check
+
+        return check(scan_name, checks_subpath, data_source='raw')
+
     chain(
         upload_games_to_gcs,
         upload_players_game_stats_to_gcs,
         upload_total_game_stats_to_gcs,
         games_gcs_to_bronze,
         players_game_stats_gcs_to_bronze,
-        total_game_stats_gcs_to_bronze
+        total_game_stats_gcs_to_bronze,
+        check_load()
     )
 
 cloud_pipeline()

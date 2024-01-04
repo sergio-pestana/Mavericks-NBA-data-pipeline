@@ -1,0 +1,9 @@
+# dbt_project.yml
+
+name: 'mavs_data_pipeline'
+
+profile: 'raw'
+
+models:
+  raw:
+    materialized: table

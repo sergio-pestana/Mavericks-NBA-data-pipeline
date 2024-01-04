@@ -2,6 +2,7 @@
 
 # apache-airflow-providers-google==10.7.0
 astronomer-cosmos[dbt-bigquery]
+protobuf==3.20.0
 soda-core-bigquery==3.0.45
 requests
 pandas
