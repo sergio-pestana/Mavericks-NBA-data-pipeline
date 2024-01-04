@@ -156,9 +156,7 @@ cython_debug/
 .DS_Store 
 
 # Airflow ignore
-gcp/
-soda/
-configuration.yml
+service_account.json
 airflow_settings.yaml
 astro
 .venv
