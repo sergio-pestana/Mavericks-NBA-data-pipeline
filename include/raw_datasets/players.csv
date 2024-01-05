@@ -1,23 +1,682 @@
-id,firstname,lastname,college,affiliation,birth_date,birth_country,nba_start,nba_pro,height_feets,height_inches,height_meters,weight_pounds,weight_kilograms,jersey,active,pos
-246,Richaun,Holmes,Bowling Green,Bowling Green/USA,1993-10-15,USA,2015,6,6,10,2.08,235,106.6,22,True,F
-283,Derrick,Jones Jr.,UNLV,UNLV/USA,1997-02-15,USA,2016,5,6,6,1.98,210,95.3,5,True,F
-817,Maxi,Kleber,Bayern Munich,Bayern Munich/Germany,1992-01-29,Germany,2017,4,6,10,2.08,240,108.9,42,True,F
-963,Luka,Doncic,Real Madrid,Real Madrid/Slovenia,1999-02-28,Slovenia,2018,3,6,7,2.01,230,104.3,77,True,F-G
-1901,Grant,Williams,Tennessee,Tennessee/USA,1998-11-30,USA,2019,2,6,6,1.98,236,107.0,12,True,F
-2593,Josh,Green,Arizona,Arizona/Australia,2000-11-16,Australia,2020,1,6,5,1.96,200,90.7,8,True,G
-3398,Brandon,Williams,Arizona,Arizona/USA,1999-11-22,USA,2021,0,6,2,1.88,190,86.2,8,True,G
-2795,Greg,Brown III,Texas,Texas/USA,2001-09-01,USA,2021,0,6,7,2.01,206,93.4,4,True,F
-2862,Joe,Wieskamp,Iowa,Iowa/USA,1999-08-23,USA,2021,0,6,6,1.98,205,93.0,15,True,G-F
-2890,A.J.,Lawson,South Carolina,South Carolina/Canada,2000-07-15,Canada,0,0,6,6,1.98,180,81.6,5,True,G
-3407,Jaden,Hardy,,,,,0,0,,,,,,3,True,G
-3959,Dexter,Dennis,Texas A&M,,,,0,0,6,,,210,,38,True,G
-3960,OlivierMaxence,Prosper,Marquette,,,,0,0,6,,,215,,18,True,F
-3961,Jordan,Walker,UAB,,,,0,0,5,,,170,,16,True,SG
-4044,Dereck II,Lively,Duke,,,,0,0,7,,,234,,2,True,C
-4045,Mike Jr.,Miles,TCU,,,,0,0,6,,,205,,14,True,G
-261,Kyrie,Irving,Duke,Duke/Australia,1992-03-23,Australia,2011,10,6,2,1.88,195,88.5,11,True,G
-374,Markieff,Morris,Kansas,Kansas/USA,1989-09-02,USA,2011,10,6,9,2.06,245,111.1,13,True,F
-215,Tim,Hardaway Jr.,Michigan,Michigan/USA,1992-03-16,USA,2013,8,6,5,1.96,205,93.0,11,True,G-F
-123,Seth,Curry,Duke,Duke/USA,1990-08-23,USA,2013,7,6,2,1.88,185,83.9,30,True,G
-433,Dwight,Powell,Stanford,Stanford/Canada,1991-07-20,Canada,2014,7,6,10,2.08,240,108.9,7,True,F-C
-164,Dante,Exum,,,,,0,0,,,,,,5,False,
+id,firstname,lastname,college,affiliation,team_id,season,birth_date,birth_country,nba_start,nba_pro,height_feets,height_inches,height_meters,weight_pounds,weight_kilograms,jersey,active,pos
+382,Dejounte,Murray,Washington,Washington/USA,1,2023,1996-09-19,USA,2016,4,6,4,1.93,180,81.6,5.0,True,G
+1858,Bruno,Fernando,Maryland,Maryland/Angola,1,2023,1998-08-15,Angola,2019,2,6,9,2.06,240,108.9,20.0,True,F-C
+1046,Trae,Young,Oklahoma,Oklahoma/USA,1,2023,1998-09-19,USA,2018,3,6,1,1.85,164,74.4,11.0,True,G
+1868,De'Andre,Hunter,Virginia,Virginia/USA,1,2023,1997-12-02,USA,2019,2,6,8,2.03,221,100.2,12.0,True,F-G
+2327,Garrison,Mathews,,,1,2023,,,0,0,,,,,,25.0,True,G
+2629,Onyeka,Okongwu,Southern California,Southern California/USA,1,2023,2000-12-11,USA,2020,1,6,8,2.03,240,108.9,17.0,True,F-C
+2569,Saddiq,Bey,Villanova,Villanova/USA,1,2023,1999-04-09,USA,2020,1,6,7,2.01,215,97.5,41.0,True,F
+2589,Trent,Forrest,Florida State,Florida State/USA,1,2023,1998-06-12,USA,2020,1,6,4,1.93,210,95.3,3.0,True,G
+2819,Jalen,Johnson,Duke,Duke/USA,1,2023,2001-12-18,USA,2021,0,6,8,2.03,219,99.3,1.0,True,F
+3444,AJ,Griffin,,,1,2023,,,0,0,,,,,,14.0,True,F
+3938,Kobe,Bufkin,Michigan,,1,2023,,,0,0,6,,,195,,,True,G
+3939,Mouhamed,Gueye,Washington State,,1,2023,,,0,0,6,,,210,,,True,F
+3941,Seth,Lundy,Penn State,,1,2023,,,0,0,6,,,220,,,True,G
+3942,Miles,Norris,UC Santa Barbara,,1,2023,,,0,0,6,,,220,,,True,F
+365,Patty,Mills,St. Mary's,St. Mary's/Australia,1,2023,1988-08-11,Australia,2009,12,6,0,1.83,180,81.6,8.0,True,G
+341,Wesley,Matthews,Marquette,Marquette/USA,1,2023,1986-10-14,USA,2009,12,6,4,1.93,220,99.8,23.0,True,G
+92,Clint,Capela,Elan Chalon,Elan Chalon/Switzerland,1,2023,1994-05-18,Switzerland,2014,7,6,10,2.08,256,116.1,15.0,True,C
+743,Bogdan,Bogdanovic,Fenerbahce,Fenerbahce/Serbia,1,2023,1992-08-18,Serbia,2017,4,6,6,1.98,225,102.1,13.0,True,G
+75,Jaylen,Brown,California,California/USA,2,2023,1996-10-24,USA,2016,5,6,6,1.98,223,101.2,7.0,True,G-F
+882,Jayson,Tatum,Duke,Duke/USA,2,2023,1998-03-03,USA,2017,4,6,8,2.03,210,95.3,,True,F-G
+897,Derrick,White,Colorado,Colorado/USA,2,2023,1994-07-02,USA,2017,4,6,4,1.93,190,86.2,9.0,True,G
+819,Luke,Kornet,Vanderbilt,Vanderbilt/USA,2,2023,1995-07-15,USA,2017,4,7,2,2.18,250,113.4,40.0,True,C-F
+1006,Svi,Mykhailiuk,Kansas,Kansas/Ukraine,2,2023,1997-06-10,Ukraine,2018,3,6,7,2.01,205,93.0,17.0,True,G-F
+2110,Oshae,Brissett,Syracuse,Syracuse/Canada,2,2023,1998-06-20,Canada,2019,2,6,7,2.01,210,95.3,12.0,True,F-G
+970,Wenyen,Gabriel,Kentucky,Kentucky/South Sudan,2,2023,1997-03-26,South Sudan,2019,2,6,9,2.06,205,93.0,35.0,True,F
+2844,Neemias,Queta,Utah State,Utah State/Portugal,2,2023,1999-07-13,Portugal,2021,0,7,0,2.13,248,112.5,88.0,True,C
+2635,Payton,Pritchard,Oregon,Oregon/USA,2,2023,1998-01-28,USA,2020,1,6,1,1.85,195,88.5,11.0,True,G
+2647,Lamar,Stevens,Penn State,Penn State/USA,2,2023,1997-07-09,USA,2020,1,6,6,1.98,230,104.3,8.0,True,F
+2921,DJ,Steward,Duke,Duke/USA,2,2023,2001-10-02,USA,0,0,6,2,1.88,163,73.9,,True,G
+2812,Sam,Hauser,Virginia,Virginia/USA,2,2023,1997-12-08,USA,2021,0,6,7,2.01,217,98.4,30.0,True,F
+2788,Dalano,Banton,Nebraska,Nebraska/Canada,2,2023,1999-11-07,Canada,2021,0,6,7,2.01,204,92.5,45.0,True,F
+3429,JD,Davison,,,2,2023,,,0,0,,,,,,20.0,True,G
+3943,Jordan,Walsh,Arkansas,,2,2023,,,0,0,6,,,205,,27.0,True,G
+3995,Drew,Peterson,USC,,2,2023,,,0,0,6,,,205,,17.0,True,F
+248,Al,Horford,Florida,Florida/Dominican Republic,2,2023,1986-06-03,Dominican Republic,2007,14,6,9,2.06,240,108.9,42.0,True,C-F
+242,Jrue,Holiday,UCLA,UCLA/USA,2,2023,1990-06-12,USA,2009,12,6,3,1.9,205,93.0,21.0,True,G
+432,Kristaps,Porzingis,Cajasol Sevilla,Cajasol Sevilla/Latvia,2,2023,1995-08-02,Latvia,2015,5,7,3,2.21,240,108.9,6.0,True,F-C
+851,Royce,O'Neale,Baylor,Baylor/USA,4,2023,1993-06-05,USA,2017,4,6,5,1.96,226,102.5,,True,F
+481,Ben,Simmons,Louisiana State,Louisiana State/Australia,4,2023,1996-07-20,Australia,2017,4,6,11,2.11,240,108.9,10.0,True,G-F
+175,Dorian,Finney-Smith,Florida,Florida/USA,4,2023,1993-05-04,USA,2016,5,6,7,2.01,220,99.8,10.0,True,F
+876,Dennis,Smith Jr.,North Carolina State,North Carolina State/USA,4,2023,1997-11-25,USA,2017,0,,,,,,8.0,True,G
+940,Mikal,Bridges,Villanova,Villanova/USA,4,2023,1996-08-30,USA,2018,3,6,6,1.98,209,94.8,25.0,True,F
+1038,Lonnie,Walker IV,Miami,Miami/USA,4,2023,1998-12-14,USA,2018,3,6,4,1.93,204,92.5,4.0,True,G-F
+1847,Darius,Bazley,Princeton HS (OH),Princeton HS (OH)/USA,4,2023,2000-06-12,USA,2019,2,6,8,2.03,208,94.3,55.0,True,F
+1854,Nic,Claxton,Georgia,Georgia/USA,4,2023,1999-04-17,USA,2019,2,6,11,2.11,215,97.5,33.0,True,C
+1871,Cameron,Johnson,North Carolina,North Carolina/USA,4,2023,1996-03-03,USA,2019,2,6,8,2.03,210,95.3,23.0,True,F
+2325,Armoni,Brooks,Houston,Houston/USA,4,2023,1998-06-05,USA,2020,1,6,3,1.9,195,88.5,1.0,True,G
+2848,Day'Ron,Sharpe,North Carolina,North Carolina/USA,4,2023,2001-11-06,USA,2021,0,6,9,2.06,265,120.2,20.0,True,C
+2820,Keon,Johnson,Tennessee,Tennessee/USA,4,2023,2002-03-10,USA,2021,0,6,4,1.93,185,83.9,6.0,True,G
+2855,Cam,Thomas,Louisiana State,Louisiana State/Japan,4,2023,2001-10-13,Japan,2021,0,6,3,1.9,210,95.3,24.0,True,G
+2861,Trendon,Watford,Louisiana State,Louisiana State/USA,4,2023,2000-11-09,USA,2021,0,6,8,2.03,237,107.5,2.0,True,F
+3944,Noah,Clowney,Alabama,,4,2023,,,0,0,6,,,210,,21.0,True,F
+3945,Dariq,Whitehead,Duke,,4,2023,,,0,0,6,,,220,,,True,F
+3946,Jalen,Wilson,Kansas,,4,2023,,,0,0,6,,,225,,22.0,True,F
+4041,Harry III,Giles,Duke,,4,2023,,,0,0,6,,,240,,14.0,True,F
+142,Spencer,Dinwiddie,Colorado,Colorado/USA,4,2023,1993-04-06,USA,2014,7,6,6,1.98,215,97.5,26.0,True,G
+254,RJ,Hunter,Georgia State,Georgia State/USA,5,2023,1993-10-24,USA,2015,4,6,5,1.96,185,83.9,28.0,True,G
+458,Terry,Rozier,Louisville,Louisville/USA,5,2023,1994-03-17,USA,2015,6,6,1,1.85,190,86.2,3.0,True,G
+850,Frank,Ntilikina,Strasbourg IG,Strasbourg IG/France,5,2023,1998-07-28,France,2017,4,6,4,1.93,200,90.7,21.0,True,G
+880,Edmond,Sumner,,,5,2023,,,0,0,,,,,,4.0,True,G
+941,Miles,Bridges,Michigan State,Michigan State/USA,5,2023,1998-03-21,USA,2018,3,6,7,2.01,225,102.1,,True,F
+1879,Cody,Martin,Nevada,Nevada/USA,5,2023,1995-09-28,USA,2019,2,6,6,1.98,205,93.0,11.0,True,F
+1897,P.J.,Washington,Kentucky,Kentucky/USA,5,2023,1998-08-23,USA,2019,2,6,7,2.01,230,104.3,25.0,True,F
+2566,LaMelo,Ball,Illawarra,Illawarra/USA,5,2023,2001-08-22,USA,2020,1,6,7,2.01,180,81.6,1.0,True,G
+2614,Theo,Maledon,                                   ,Asvel/France,5,2023,2001-06-12,France,2020,1,6,4,1.93,175,79.4,5.0,False,
+2639,Nick,Richards,Kentucky,Kentucky/Jamaica,5,2023,1997-11-29,Jamaica,2020,1,7,0,2.13,245,111.1,4.0,True,C
+2793,James,Bouknight,Connecticut,Connecticut/USA,5,2023,2000-09-18,USA,2021,0,6,4,1.93,190,86.2,2.0,True,G
+2856,JT,Thor,Auburn,Auburn/USA,5,2023,2002-08-26,USA,2021,0,6,9,2.06,203,92.1,21.0,True,F
+3506,Mark,Williams,,,5,2023,,,0,0,,,,,,5.0,True,C
+3469,Bryce,McGowens,,,5,2023,,,0,0,,,,,,7.0,True,G
+3947,Amari,Bailey,UCLA,,5,2023,,,0,0,6,,,185,,,True,G
+3948,Leaky,Black,North Carolina,,5,2023,,,0,0,6,,,205,,,True,F
+3949,Nathan,Mensah,San Diego State,,5,2023,,,0,0,6,,,230,,31.0,True,C
+3950,Brandon,Miller,Alabama,,5,2023,,,0,0,6,,,200,,,True,F
+4042,Nick Jr.,Smith,Arkansas,,5,2023,,,0,0,6,,,170,,,True,G
+227,Gordon,Hayward,Butler,Butler/USA,5,2023,1990-03-23,USA,2010,11,6,7,2.01,225,102.1,20.0,True,F
+488,Ish,Smith,Wake Forest,Wake Forest/USA,5,2023,1988-07-05,USA,2010,11,6,0,1.83,175,79.4,14.0,True,G
+631,Alex,Caruso,Texas A&M,Texas A&M/USA,6,2023,1994-02-28,USA,2017,4,6,5,1.96,186,84.4,6.0,True,G
+765,Torrey,Craig,South Carolina Upstate,South Carolina Upstate/USA,6,2023,1990-12-19,USA,2017,4,6,7,2.01,221,100.2,,True,F
+949,Jevon,Carter,West Virginia,West Virginia/USA,6,2023,1995-09-14,USA,2018,3,6,1,1.85,200,90.7,5.0,True,G
+1900,Coby,White,North Carolina,North Carolina/USA,6,2023,2000-02-16,USA,2019,2,6,4,1.93,195,88.5,,True,G
+2664,Patrick,Williams,Florida State,Florida State/USA,6,2023,2001-08-26,USA,2020,1,6,7,2.01,215,97.5,44.0,True,F
+2802,Ayo,Dosunmu,Illinois,Illinois/USA,6,2023,2000-01-17,USA,2021,0,6,4,1.93,200,90.7,12.0,True,G
+3081,Carlik,Jones,Louisville,Louisville/USA,6,2023,1997-12-23,USA,2021,0,6,1,1.85,185,83.9,22.0,True,G
+2853,Terry,Taylor,Austin Peay,Austin Peay/USA,6,2023,1999-09-23,USA,2021,0,6,5,1.96,230,104.3,21.0,True,F
+3461,Justin,Lewis,,,6,2023,,,0,0,,,,,,34.0,True,F
+3494,Dalen,Terry,,,6,2023,,,0,0,,,,,,25.0,True,F
+3452,Quenton,Jackson,,,6,2023,,,0,0,,,,,,29.0,True,G
+3951,Onuralp,Bitim,,,6,2023,,,0,0,6,,,215,,,True,SF
+3952,Henri,Drell,,,6,2023,,,0,0,6,,,215,,,True,F
+3953,Max,Heidegger,UC Santa Barbara,,6,2023,,,0,0,6,,,180,,,True,G
+3954,Julian,Phillips,Tennessee,,6,2023,,,0,0,6,,,197,,,True,F
+3955,Adama,Sanogo,UConn,,6,2023,,,0,0,6,,,258,,,True,C
+136,DeMar,DeRozan,Southern California,Southern California/USA,6,2023,1989-08-07,USA,2009,12,6,6,1.98,220,99.8,11.0,True,G-F
+534,Nikola,Vucevic,Southern California,Southern California/Montenegro,6,2023,1990-10-24,Montenegro,2011,10,6,10,2.08,260,117.9,9.0,True,C
+147,Andre,Drummond,Connecticut,Connecticut/USA,6,2023,1993-08-10,USA,2012,9,6,10,2.08,279,126.6,3.0,True,C
+308,Zach,LaVine,UCLA,UCLA/USA,6,2023,1995-03-10,USA,2014,7,6,5,1.96,200,90.7,8.0,True,G-F
+281,Damian,Jones,Vanderbilt,Vanderbilt/USA,7,2023,1995-06-30,USA,2016,5,6,11,2.11,245,111.1,30.0,True,C
+317,Caris,LeVert,Michigan,Michigan/USA,7,2023,1994-08-25,USA,2016,5,6,6,1.98,205,93.0,3.0,True,G
+391,Georges,Niang,Iowa State,Iowa State/USA,7,2023,1993-06-17,USA,2016,5,6,7,2.01,230,104.3,20.0,True,F
+840,Donovan,Mitchell,Louisville,Louisville/USA,7,2023,1996-09-07,USA,2017,4,6,1,1.85,215,97.5,45.0,True,G
+727,Jarrett,Allen,Texas,Texas/USA,7,2023,1998-04-21,USA,2017,4,6,10,2.08,243,110.2,31.0,True,C
+1025,Zhaire,Smith,Texas Tech,Texas Tech/USA,7,2023,1999-06-04,USA,2018,2,6,3,1.9,205,93.0,5.0,True,G
+2051,Max,Strus,DePaul,DePaul/USA,7,2023,1996-03-28,USA,2019,2,6,5,1.96,220,99.8,31.0,True,G-F
+1860,Darius,Garland,Vanderbilt,Vanderbilt/USA,7,2023,2000-01-26,USA,2019,2,6,1,1.85,192,87.1,10.0,True,G
+1870,Ty,Jerome,Virginia,Virginia/USA,7,2023,1997-07-08,USA,2019,2,6,5,1.96,195,88.5,16.0,True,G-F
+2392,Dean,Wade,Kansas State,Kansas State/USA,7,2023,1996-11-20,USA,2019,2,6,9,2.06,228,103.4,32.0,True,F-C
+2630,Isaac,Okoro,Auburn,Auburn/USA,7,2023,2001-01-26,USA,2020,1,6,5,1.96,225,102.1,35.0,True,F-G
+2623,Sam,Merrill,Utah State,Utah State/USA,7,2023,1996-05-15,USA,2020,0,,,,,,20.0,True,G
+2800,Sharife,Cooper,Auburn,Auburn/USA,7,2023,2001-06-11,USA,2021,0,6,1,1.85,176,79.8,2.0,True,G
+2835,Evan,Mobley,Southern California,Southern California/USA,7,2023,2001-06-18,USA,2021,0,6,11,2.11,215,97.5,4.0,True,C
+3472,Isaiah,Mobley,,,7,2023,,,0,0,,,,,,15.0,True,F
+3956,Emoni,Bates,Eastern Michigan,,7,2023,,,0,0,6,,,170,,21.0,True,F
+3957,Pete,Nance,North Carolina,,7,2023,,,0,0,6,,,230,,48.0,True,F
+3958,Justin,Powell,Washington State,,7,2023,,,0,0,6,,,197,,,True,G
+4043,Craig Jr.,Porter,Wichita State,,7,2023,,,0,0,6,,,186,,40.0,True,G
+515,Tristan,Thompson,Texas-Austin,Texas-Austin/Canada,7,2023,1991-03-13,Canada,2011,10,6,9,2.06,254,115.2,3.0,True,C-F
+246,Richaun,Holmes,Bowling Green,Bowling Green/USA,8,2023,1993-10-15,USA,2015,6,6,10,2.08,235,106.6,22.0,True,F
+283,Derrick,Jones Jr.,UNLV,UNLV/USA,8,2023,1997-02-15,USA,2016,5,6,6,1.98,210,95.3,5.0,True,F
+817,Maxi,Kleber,Bayern Munich,Bayern Munich/Germany,8,2023,1992-01-29,Germany,2017,4,6,10,2.08,240,108.9,42.0,True,F
+963,Luka,Doncic,Real Madrid,Real Madrid/Slovenia,8,2023,1999-02-28,Slovenia,2018,3,6,7,2.01,230,104.3,77.0,True,F-G
+1901,Grant,Williams,Tennessee,Tennessee/USA,8,2023,1998-11-30,USA,2019,2,6,6,1.98,236,107.0,12.0,True,F
+2593,Josh,Green,Arizona,Arizona/Australia,8,2023,2000-11-16,Australia,2020,1,6,5,1.96,200,90.7,8.0,True,G
+3398,Brandon,Williams,Arizona,Arizona/USA,8,2023,1999-11-22,USA,2021,0,6,2,1.88,190,86.2,8.0,True,G
+2795,Greg,Brown III,Texas,Texas/USA,8,2023,2001-09-01,USA,2021,0,6,7,2.01,206,93.4,4.0,True,F
+2862,Joe,Wieskamp,Iowa,Iowa/USA,8,2023,1999-08-23,USA,2021,0,6,6,1.98,205,93.0,15.0,True,G-F
+2890,A.J.,Lawson,South Carolina,South Carolina/Canada,8,2023,2000-07-15,Canada,0,0,6,6,1.98,180,81.6,5.0,True,G
+3407,Jaden,Hardy,,,8,2023,,,0,0,,,,,,3.0,True,G
+3959,Dexter,Dennis,Texas A&M,,8,2023,,,0,0,6,,,210,,38.0,True,G
+3960,OlivierMaxence,Prosper,Marquette,,8,2023,,,0,0,6,,,215,,18.0,True,F
+3961,Jordan,Walker,UAB,,8,2023,,,0,0,5,,,170,,16.0,True,SG
+4044,Dereck II,Lively,Duke,,8,2023,,,0,0,7,,,234,,2.0,True,C
+4045,Mike Jr.,Miles,TCU,,8,2023,,,0,0,6,,,205,,14.0,True,G
+261,Kyrie,Irving,Duke,Duke/Australia,8,2023,1992-03-23,Australia,2011,10,6,2,1.88,195,88.5,11.0,True,G
+374,Markieff,Morris,Kansas,Kansas/USA,8,2023,1989-09-02,USA,2011,10,6,9,2.06,245,111.1,13.0,True,F
+215,Tim,Hardaway Jr.,Michigan,Michigan/USA,8,2023,1992-03-16,USA,2013,8,6,5,1.96,205,93.0,11.0,True,G-F
+123,Seth,Curry,Duke,Duke/USA,8,2023,1990-08-23,USA,2013,7,6,2,1.88,185,83.9,30.0,True,G
+433,Dwight,Powell,Stanford,Stanford/Canada,8,2023,1991-07-20,Canada,2014,7,6,10,2.08,240,108.9,7.0,True,F-C
+164,Dante,Exum,,,8,2023,,,0,0,,,,,,5.0,False,
+383,Jamal,Murray,Kentucky,Kentucky/Canada,9,2023,1997-02-23,Canada,2016,5,6,3,1.9,215,97.5,27.0,True,G
+1055,Amida,Brimah,Connecticut,Connecticut/USA,9,2023,1994-02-11,USA,2020,1,6,10,2.08,230,104.3,37.0,True,C
+1014,Michael,Porter Jr.,Missouri,Missouri/USA,9,2023,1998-06-29,USA,2019,2,6,10,2.08,218,98.9,1.0,True,F
+2627,Zeke,Nnaji,Arizona,Arizona/USA,9,2023,2001-01-09,USA,2020,1,6,9,2.06,240,108.9,22.0,True,F-C
+3091,Braxton,Key,Virginia,Virginia/USA,9,2023,1997-02-14,USA,2021,0,6,8,2.03,225,102.1,8.0,True,F
+2814,Jay,Huff,Virginia,Virginia/USA,9,2023,1997-08-25,USA,2021,0,,,,,,30.0,True,F
+2840,Jamorko,Pickett,Georgetown,Georgetown/USA,9,2023,1997-12-24,USA,2021,0,6,9,2.06,206,93.4,24.0,True,F
+3420,Christian,Braun,,,9,2023,,,0,0,,,,,,,True,G
+3498,Peyton,Watson,,,9,2023,,,0,0,,,,,,8.0,True,G
+3441,Collin,Gillespie,,,9,2023,,,0,0,,,,,,21.0,True,G
+3963,Armaan,Franklin,Virginia,,9,2023,,,0,0,6,,,195,,,True,G
+3964,Andrew,Funk,Penn State,,9,2023,,,0,0,6,,,188,,,True,G
+3965,Jalen,Pickett,Siena,,9,2023,,,0,0,6,,,202,,,True,G
+3966,Julian,Strawther,Gonzaga,,9,2023,,,0,0,6,,,205,,,True,G
+3967,Hunter,Tyson,Clemson,,9,2023,,,0,0,6,,,215,,,True,F
+4070,A.,Toney,,,9,2023,,,0,0,,,,,,,True,G
+286,DeAndre,Jordan,Texas A&M,Texas A&M/USA,9,2023,1988-07-21,USA,2008,13,6,11,2.11,265,120.2,6.0,True,C
+264,Reggie,Jackson,Boston College,Boston College/USA,9,2023,1990-04-16,USA,2011,10,6,2,1.88,208,94.3,1.0,True,G
+243,Justin,Holiday,Washington,Washington/USA,9,2023,1989-04-05,USA,2012,8,6,6,1.98,180,81.6,9.0,True,F-G
+89,Kentavious,Caldwell-Pope,Georgia,Georgia/USA,9,2023,1993-02-18,USA,2013,8,6,5,1.96,204,92.5,5.0,True,G
+195,Aaron,Gordon,Arizona,Arizona/USA,9,2023,1995-09-16,USA,2014,7,6,8,2.03,235,106.6,50.0,True,F
+279,Nikola,Jokic,Mega Basket,Mega Basket/Serbia,9,2023,1995-02-19,Serbia,2015,6,6,11,2.11,284,128.8,15.0,True,C
+931,Marvin,Bagley III,Duke,Duke/USA,10,2023,1999-03-14,USA,2018,3,6,11,2.11,235,106.6,35.0,True,F
+987,Kevin,Knox II,Kentucky,Kentucky/USA,10,2023,1999-08-11,USA,2018,3,6,7,2.01,215,97.5,5.0,True,F
+2557,Jontay,Porter,Missouri,Missouri/USA,10,2023,1999-11-15,USA,2020,0,6,11,2.11,240,108.9,4.0,True,C-F
+2666,James,Wiseman,Memphis,Memphis/USA,10,2023,2001-03-31,USA,2020,1,7,0,2.13,240,108.9,33.0,True,C
+2599,Killian,Hayes,Ratiopharm Ulm,Ratiopharm Ulm/France,10,2023,2001-07-27,France,2020,1,6,5,1.96,195,88.5,7.0,True,G
+2648,Isaiah,Stewart,Washington,Washington/USA,10,2023,2001-05-22,USA,2020,1,6,8,2.03,250,113.4,28.0,True,F-C
+2678,Zavier,Simpson,Michigan,Michigan/USA,10,2023,1997-02-11,USA,2021,0,,,,,,9.0,True,G
+2829,Isaiah,Livers,Michigan,Michigan/USA,10,2023,1998-07-28,USA,2021,0,6,6,1.98,232,105.2,12.0,True,F
+2801,Cade,Cunningham,Oklahoma State,Oklahoma State/USA,10,2023,2001-09-25,USA,2021,0,6,6,1.98,220,99.8,2.0,True,G
+3790,Stanley,Umude,,,10,2023,,,0,0,,,,,,14.0,True,G
+3451,Jaden,Ivey,,,10,2023,,,0,0,,,,,,23.0,True,G
+3433,Jalen,Duren,,,10,2023,,,0,0,,,,,,,True,C
+3481,Jared,Rhoden,,,10,2023,,,0,0,,,,,,42.0,True,G
+3417,Buddy,Boeheim,,,10,2023,,,0,0,,,,,,27.0,True,F
+3968,Malcolm,Cazalon,,,10,2023,,,0,0,6,,,185,,20.0,True,G
+3969,Tosan,Evbuomwan,Princeton,,10,2023,,,0,0,6,,,217,,,True,F
+3970,Marcus,Sasser,Houston,,10,2023,,,0,0,6,,,195,,,True,G
+3971,Ausar,Thompson,,,10,2023,,,0,0,6,,,190,,,True,F
+84,Alec,Burks,Colorado,Colorado/USA,10,2023,1991-07-20,USA,2011,10,6,6,1.98,214,97.1,5.0,True,G
+60,Bojan,Bogdanovic,Fenerbahce,Fenerbahce/Croatia,10,2023,1989-04-18,Croatia,2014,7,6,7,2.01,226,102.5,44.0,True,F
+221,Joe,Harris,Virginia,Virginia/USA,10,2023,1991-09-06,USA,2014,7,6,6,1.98,220,99.8,12.0,True,G-F
+415,Chris,Paul,Wake Forest,Wake Forest/USA,11,2023,1985-05-06,USA,2005,16,6,0,1.83,175,79.4,3.0,True,G
+322,Kevon,Looney,UCLA,UCLA/USA,11,2023,1996-02-06,USA,2015,6,6,9,2.06,222,100.7,5.0,True,F
+593,Gary,Payton II,Oregon State,Oregon State/USA,11,2023,1992-12-01,USA,2016,5,6,3,1.9,195,88.5,,True,G
+1019,Jerome,Robinson,,,11,2023,,,0,0,,,,,,8.0,True,G
+2827,Jonathan,Kuminga,NBA G League Ignite,NBA G League Ignite/DRC,11,2023,2002-10-06,DRC,2021,0,6,7,2.01,225,102.1,,True,F
+2836,Moses,Moody,Arkansas,Arkansas/USA,11,2023,2002-05-31,USA,2021,0,6,5,1.96,211,95.7,4.0,True,G
+2806,Usman,Garuba,Real Madrid,Real Madrid/Spain,11,2023,2002-03-09,Spain,2021,0,6,8,2.03,229,103.9,16.0,True,F
+3485,Gui,Santos,,,11,2023,,,0,0,,,,,,15.0,True,G
+3480,Lester,Quinones,,,11,2023,,,0,0,,,,,,25.0,True,G
+3972,Kendric,Davis,Memphis,,11,2023,,,0,0,5,,,184,,21.0,True,G
+3973,Trayce,JacksonDavis,Indiana,,11,2023,,,0,0,6,,,245,,32.0,True,F
+3974,Javan,Johnson,DePaul,,11,2023,,,0,0,6,,,192,,31.0,True,F
+3975,Brandin,Podziemski,Santa Clara,,11,2023,,,0,0,6,,,203,,2.0,True,G
+186,Rudy,Gay,Connecticut,Connecticut/USA,11,2023,1986-08-17,USA,2006,15,6,8,2.03,250,113.4,22.0,True,F-G
+124,Stephen,Curry,Davidson,Davidson/USA,11,2023,1988-03-14,USA,2009,12,6,2,1.88,185,83.9,30.0,True,G
+514,Klay,Thompson,Washington State,Washington State/USA,11,2023,1990-02-08,USA,2011,8,6,6,1.98,220,99.8,11.0,True,G
+287,Cory,Joseph,Texas,Texas/Canada,11,2023,1991-08-20,Canada,2011,10,6,3,1.9,200,90.7,18.0,True,G
+204,Draymond,Green,Michigan State,Michigan State/USA,11,2023,1990-03-04,USA,2012,9,6,6,1.98,230,104.3,23.0,True,F
+354,Rodney,McGruder,Kansas State,Kansas State/USA,11,2023,1991-07-29,USA,2016,5,6,4,1.93,205,93.0,17.0,True,G
+548,Andrew,Wiggins,Kansas,Kansas/Canada,11,2023,1995-02-23,Canada,2014,7,6,7,2.01,197,89.4,22.0,True,F
+468,Dario,Saric,Anadolu Efes,Anadolu Efes/Croatia,11,2023,1994-04-08,Croatia,2016,5,6,10,2.08,225,102.1,20.0,True,F-C
+3810,Donovan,Williams,,,11,2023,,,0,0,,,,,,88.0,True,G-F
+337,Boban,Marjanovic,Crvena zvezda,Crvena zvezda/Serbia,14,2023,1988-08-15,Serbia,2015,6,7,3,2.21,290,131.5,51.0,True,C
+527,Fred,VanVleet,Wichita State,Wichita State/USA,14,2023,1994-02-25,USA,2016,5,6,1,1.85,197,89.4,23.0,True,G
+749,Dillon,Brooks,Oregon,Oregon/Canada,14,2023,1996-01-22,Canada,2017,4,6,7,2.01,225,102.1,24.0,True,G-F
+979,Aaron,Holiday,UCLA,UCLA/USA,14,2023,1996-09-30,USA,2018,3,6,0,1.83,185,83.9,4.0,True,G
+1485,Jock,Landale,,,14,2023,,,0,0,,,,,,11.0,True,C
+2672,Nate,Hinton,Houston,Houston/USA,14,2023,1999-06-08,USA,2020,1,6,5,1.96,210,95.3,14.0,True,G-F
+2810,Jalen,Green,NBA G League Ignite,NBA G League Ignite/USA,14,2023,2002-02-09,USA,2021,0,6,4,1.93,186,84.4,,True,G
+2650,Jae'Sean,Tate,Ohio State,Ohio State/USA,14,2023,1995-10-28,USA,2020,1,6,4,1.93,230,104.3,8.0,True,F
+2847,Alperen,Sengun,Besiktas,Besiktas/Turkey,14,2023,2002-07-25,Turkey,2021,0,6,10,2.08,243,110.2,28.0,True,C
+3430,Darius,Days,,,14,2023,,,0,0,,,,,,,True,F
+3489,Jabari,Smith Jr.,,,14,2023,,,0,0,,,,,,1.0,True,F
+3435,Tari,Eason,,,14,2023,,,0,0,,,,,,17.0,True,F
+3450,Trevor,Hudgins,,,14,2023,,,0,0,,,,,,12.0,True,G
+3931,Jeenathan,Williams,,,14,2023,,,0,0,,,,,,49.0,True,G
+3976,Matthew,Mayer,Illinois,,14,2023,,,0,0,6,,,225,,,True,F
+3977,Amen,Thompson,,,14,2023,,,0,0,6,,,214,,,True,F
+3978,Cam,Whitmore,Villanova,,14,2023,,,0,0,6,,,232,,,True,F
+207,Jeff,Green,Georgetown,Georgetown/USA,14,2023,1986-08-28,USA,2007,13,6,8,2.03,235,106.6,32.0,True,F
+869,Samardo,Samuels,,,14,2023,,,0,0,,,,,,6.0,True,F
+82,Reggie,Bullock,North Carolina,North Carolina/USA,14,2023,1991-03-16,USA,2013,8,6,6,1.98,205,93.0,25.0,True,G-F
+522,Myles,Turner,Texas,Texas/USA,15,2023,1996-03-24,USA,2015,6,6,11,2.11,250,113.4,33.0,True,C-F
+236,Buddy,Hield,Oklahoma,Oklahoma/Bahamas,15,2023,1992-12-17,Bahamas,2016,5,6,4,1.93,220,99.8,24.0,True,G
+886,Daniel,Theis,Brose Bamberg,Brose Bamberg/Germany,15,2023,1992-04-04,Germany,2017,4,6,9,2.06,245,111.1,27.0,True,F-C
+944,Bruce,Brown,Miami,Miami/USA,15,2023,1996-08-15,USA,2018,3,6,4,1.93,202,91.6,11.0,True,G-F
+3476,Andrew,Nembhard,,,15,2023,,,0,0,,,,,,2.0,True,G-F
+2628,Jordan,Nwora,Louisville,Louisville/USA,15,2023,1998-09-09,USA,2020,1,6,8,2.03,225,102.1,13.0,True,F
+2658,Obi,Toppin,Dayton,Dayton/USA,15,2023,1998-03-04,USA,2020,1,6,9,2.06,220,99.8,1.0,True,F
+2595,Tyrese,Haliburton,Iowa State,Iowa State/USA,15,2023,2000-02-29,USA,2020,1,6,5,1.96,185,83.9,,True,G
+2626,Aaron,Nesmith,Vanderbilt,Vanderbilt/USA,15,2023,1999-10-16,USA,2020,1,6,5,1.96,215,97.5,23.0,True,G-F
+2644,Jalen,Smith,Maryland,Maryland/USA,15,2023,2000-03-16,USA,2020,1,6,10,2.08,215,97.5,25.0,True,F-C
+2817,Isaiah,Jackson,Kentucky,Kentucky/USA,15,2023,2002-01-10,USA,2021,0,6,10,2.08,205,93.0,22.0,True,F
+3466,Bennedict,Mathurin,,,15,2023,,,0,0,,,,,,,True,G-F
+3423,Kendall,Brown,,,15,2023,,,0,0,,,,,,10.0,True,G
+3979,Ben,Sheppard,Belmont,,15,2023,,,0,0,6,,,190,,26.0,True,G
+3980,Oscar,Tshiebwe,Kentucky,,15,2023,,,0,0,6,,,260,,44.0,True,C
+3981,Jarace,Walker,Houston,,15,2023,,,0,0,6,,,240,,5.0,True,F
+3982,Isaiah,Wong,Miami,,15,2023,,,0,0,6,,,184,,21.0,True,G
+274,James,Johnson,Wake Forest,Wake Forest/USA,15,2023,1987-02-20,USA,2009,0,,,,,,16.0,True,F
+348,T.J.,McConnell,Arizona,Arizona/USA,15,2023,1992-03-25,USA,2015,6,6,1,1.85,190,86.2,9.0,True,G
+434,Norman,Powell,UCLA,UCLA/USA,16,2023,1993-05-25,USA,2015,6,6,3,1.9,215,97.5,24.0,True,G
+575,Ivica,Zubac,Mega Basket,Mega Basket/Croatia,16,2023,1997-03-18,Croatia,2016,5,7,0,2.13,240,108.9,40.0,True,C
+886,Daniel,Theis,Brose Bamberg,Brose Bamberg/Germany,16,2023,1992-04-04,Germany,2017,4,6,9,2.06,245,111.1,27.0,True,F-C
+2115,Amir,Coffey,Minnesota,Minnesota/USA,16,2023,1997-06-17,USA,2019,2,6,7,2.01,210,95.3,7.0,True,G-F
+1877,Terance,Mann,Florida State,Florida State/USA,16,2023,1996-10-18,USA,2019,2,6,5,1.96,215,97.5,14.0,True,G-F
+3396,Xavier,Moon,Morehead State,Morehead State/USA,16,2023,1995-01-02,USA,2021,0,6,2,1.88,165,74.8,15.0,True,G
+2839,Filip,Petrusev,Gonzaga,Gonzaga/Serbia,16,2023,2000-04-15,Serbia,0,0,6,11,2.11,225,102.1,,True,C
+2617,Kenyon,Martin Jr.,IMG Academy (FL),IMG Academy (FL)/USA,16,2023,2001-01-06,USA,2020,1,6,5,1.96,215,97.5,6.0,True,F
+2792,Brandon,Boston Jr.,Kentucky,Kentucky/USA,16,2023,2001-11-28,USA,2021,0,6,6,1.98,188,85.3,4.0,True,G
+2816,Bones,Hyland,Virginia Commonwealth,Virginia Commonwealth/USA,16,2023,2000-09-14,USA,2021,0,6,2,1.88,169,76.7,3.0,True,G
+2843,Joshua,Primo,Alabama,Alabama/Canada,16,2023,2002-12-24,Canada,2021,0,6,4,1.93,189,85.7,11.0,True,G
+3431,Moussa,Diabate,,,16,2023,,,0,0,,,,,,25.0,True,F
+3983,Kobe,Brown,Missouri,,16,2023,,,0,0,6,,,250,,21.0,True,G
+3984,Jordan,Miller,Miami,,16,2023,,,0,0,6,,,195,,,True,G
+3985,Bryson,Williams,Texas Tech,,16,2023,,,0,0,6,,,240,,41.0,True,F
+520,P.J.,Tucker,Texas,Texas/USA,16,2023,1985-05-05,USA,2006,10,6,5,1.96,245,111.1,17.0,True,F
+544,Russell,Westbrook,UCLA,UCLA/USA,16,2023,1988-11-12,USA,2008,13,6,3,1.9,200,90.7,,True,G
+40,Nicolas,Batum,Le Mans,Le Mans/France,16,2023,1988-12-14,France,2008,13,6,8,2.03,230,104.3,33.0,True,G-F
+216,James,Harden,Arizona State,Arizona State/USA,16,2023,1989-08-26,USA,2009,12,6,5,1.96,220,99.8,1.0,True,G
+189,Paul,George,Fresno State,Fresno State/USA,16,2023,1990-05-02,USA,2010,11,6,8,2.03,220,99.8,13.0,True,F
+314,Kawhi,Leonard,San Diego State,San Diego State/USA,16,2023,1991-06-29,USA,2011,10,6,7,2.01,225,102.1,2.0,True,F
+426,Mason,Plumlee,Duke,Duke/USA,16,2023,1990-03-05,USA,2013,8,6,11,2.11,254,115.2,24.0,True,F-C
+118,Robert,Covington,Tennessee State,Tennessee State/USA,16,2023,1990-12-14,USA,2013,8,6,7,2.01,209,94.8,23.0,True,F
+462,D'Angelo,Russell,Ohio State,Ohio State/USA,17,2023,1996-02-23,USA,2015,6,6,4,1.93,193,87.5,,True,G
+560,Christian,Wood,UNLV,UNLV/USA,17,2023,1995-09-27,USA,2015,5,6,9,2.06,214,97.1,35.0,True,F
+437,Taurean,Prince,Baylor,Baylor/USA,17,2023,1994-03-22,USA,2016,5,6,6,1.98,218,98.9,12.0,True,F
+1036,Jarred,Vanderbilt,Kentucky,Kentucky/USA,17,2023,1999-04-03,USA,2018,3,6,9,2.06,214,97.1,8.0,True,F
+1862,Rui,Hachimura,Gonzaga,Gonzaga/Japan,17,2023,1998-02-08,Japan,2019,2,6,8,2.03,230,104.3,8.0,True,F
+1775,Gabe,Vincent,California-Santa Barbara,California-Santa Barbara/USA,17,2023,1996-06-14,USA,2019,2,6,3,1.9,200,90.7,2.0,True,G
+1889,Cam,Reddish,Duke,Duke/USA,17,2023,1999-09-01,USA,2019,2,6,8,2.03,217,98.4,,True,F-G
+1864,Jaxson,Hayes,Texas,Texas/USA,17,2023,2000-05-23,USA,2019,2,6,11,2.11,220,99.8,10.0,True,C-F
+2845,Austin,Reaves,Oklahoma,Oklahoma/USA,17,2023,1998-05-29,USA,2021,0,6,5,1.96,197,89.4,15.0,True,G
+3477,Scotty,Pippen Jr.,,,17,2023,,,0,0,,,,,,14.0,True,G
+3427,Max,Christie,,,17,2023,,,0,0,,,,,,10.0,True,G
+3525,Bryce,Hamilton,,,17,2023,,,0,0,,,,,,53.0,True,G
+3986,Damion,Baugh,TCU,,17,2023,,,0,0,6,,,194,,18.0,True,G
+3987,Colin,Castleton,Florida,,17,2023,,,0,0,6,,,231,,14.0,True,C
+3988,Alex,Fudge,Florida,,17,2023,,,0,0,6,,,189,,17.0,True,F
+3989,D'Moi,Hodge,Missouri,,17,2023,,,0,0,6,,,185,,55.0,True,G
+3990,Jalen,HoodSchifino,Indiana,,17,2023,,,0,0,6,,,215,,,True,G
+3991,Maxwell,Lewis,Pepperdine,,17,2023,,,0,0,6,,,205,,21.0,True,F
+3992,Vincent,ValerioBodon,,,17,2023,,,0,0,6,,,200,,27.0,True,SF
+126,Anthony,Davis,Kentucky,Kentucky/USA,17,2023,1993-03-11,USA,2012,9,6,10,2.08,253,114.8,3.0,True,F-C
+265,LeBron,James,St. Vincent-St. Mary HS (OH),St. Vincent-St. Mary HS (OH)/USA,17,2023,1984-12-30,USA,2003,18,6,9,2.06,250,113.4,6.0,True,F
+626,Shaquille,Harrison,Tulsa,Tulsa/USA,19,2023,1993-10-06,USA,2017,0,,,,,,3.0,True,G
+814,Luke,Kennard,Duke,Duke/USA,19,2023,1996-06-24,USA,2017,4,6,5,1.96,206,93.4,5.0,True,G
+2201,Mychal,Mulder,,,19,2023,,,0,0,,,,,,15.0,True,G
+982,Jaren,Jackson Jr.,Michigan State,Michigan State/USA,19,2023,1999-09-15,USA,2018,3,6,11,2.11,242,109.8,13.0,True,F-C
+1881,Ja,Morant,Murray State,Murray State/USA,19,2023,1999-08-10,USA,2019,2,6,3,1.9,174,78.9,12.0,True,G
+1882,Jaylen,Nowell,Washington,Washington/USA,19,2023,1999-07-09,USA,2019,2,6,4,1.93,201,91.2,4.0,True,G
+2177,John,Konchar,Indiana-Purdue Fort Wayne,Indiana-Purdue Fort Wayne/USA,19,2023,1996-03-22,USA,2019,2,6,5,1.96,210,95.3,46.0,True,G
+2656,Xavier,Tillman,Michigan State,Michigan State/USA,19,2023,1999-01-12,USA,2020,1,6,8,2.03,245,111.1,2.0,True,F
+2568,Desmond,Bane,TCU,TCU/USA,19,2023,1998-06-25,USA,2020,1,6,5,1.96,215,97.5,22.0,True,G
+2857,Isaiah,Todd,NBA G League Ignite,NBA G League Ignite/USA,19,2023,2001-10-17,USA,2021,0,6,9,2.06,219,99.3,14.0,True,F
+2864,Ziaire,Williams,Stanford,Stanford/USA,19,2023,2001-09-12,USA,2021,0,6,9,2.06,185,83.9,8.0,True,F
+2786,Santi,Aldama,Loyola-Maryland,Loyola-Maryland/Spain,19,2023,2001-01-10,Spain,2021,0,6,11,2.11,215,97.5,7.0,True,F-C
+3460,Jake,LaRavia,,,19,2023,,,0,0,,,,,,3.0,True,F
+3483,David,Roddy,,,19,2023,,,0,0,,,,,,27.0,True,F
+3508,Vince,Williams Jr.,,,19,2023,,,0,0,,,,,,5.0,True,G
+3463,Kenneth,Lofton Jr.,,,19,2023,,,0,0,,,,,,6.0,True,F
+3892,Jacob,Gilyard,,,19,2023,,,0,0,,,,,,,False,
+3993,Matthew,Hurt,Duke,,19,2023,,,0,0,6,,,235,,20.0,True,F
+3994,GG,Jackson,South Carolina,,19,2023,,,0,0,6,,,215,,45.0,True,F
+456,Derrick,Rose,Memphis,Memphis/USA,19,2023,1988-10-04,USA,2008,12,6,2,1.88,200,90.7,4.0,True,G
+54,Bismack,Biyombo,Baloncesto Fuenlabrada,Baloncesto Fuenlabrada/DRC,19,2023,1992-08-28,DRC,2011,10,6,8,2.03,255,115.7,18.0,True,C
+4,Steven,Adams,Pittsburgh,Pittsburgh/New Zealand,19,2023,1993-07-20,New Zealand,2013,8,6,11,2.11,265,120.2,4.0,True,C
+486,Marcus,Smart,Oklahoma State,Oklahoma State/USA,19,2023,1994-03-06,USA,2014,7,6,4,1.93,220,99.8,36.0,True,G
+446,Josh,Richardson,Tennessee,Tennessee/USA,20,2023,1993-09-15,USA,2015,6,6,5,1.96,200,90.7,7.0,True,G
+138,Cheick,Diallo,Kansas,Kansas/Mali,20,2023,1996-09-13,Mali,2016,0,,,,,,,False,
+724,Bam,Adebayo,Kentucky,Kentucky/USA,20,2023,1997-07-18,USA,2017,4,6,9,2.06,255,115.7,13.0,True,C-F
+753,Thomas,Bryant,Indiana,Indiana/USA,20,2023,1997-07-31,USA,2017,4,6,10,2.08,248,112.5,13.0,True,C-F
+2242,Caleb,Martin,,,20,2023,,,0,0,,,,,,16.0,True,F
+1018,Duncan,Robinson,Michigan,Michigan/USA,20,2023,1994-04-22,USA,2018,3,6,7,2.01,215,97.5,55.0,True,F
+1815,Haywood,Highsmith,Wheeling Jesuit,Wheeling Jesuit/USA,20,2023,1996-12-09,USA,2018,1,6,4,1.93,220,99.8,24.0,True,F
+1866,Tyler,Herro,Kentucky,Kentucky/USA,20,2023,2000-01-20,USA,2019,2,6,5,1.96,195,88.5,14.0,True,G
+2597,R.J.,Hampton,New Zealand Breakers,New Zealand Breakers/USA,20,2023,2001-02-07,USA,2020,1,6,4,1.93,175,79.4,13.0,True,G
+2798,Justin,Champagnie,Pittsburgh,Pittsburgh/USA,20,2023,2001-06-29,USA,2021,0,6,6,1.98,206,93.4,11.0,True,G-F
+3360,Dru,Smith,,,20,2023,,,0,0,,,,,,9.0,True,G
+3453,Nikola,Jovic,,,20,2023,,,0,0,,,,,,5.0,True,F
+3482,Orlando,Robinson,,,20,2023,,,0,0,,,,,,25.0,True,C
+3503,Alondes,Williams,,,20,2023,,,0,0,,,,,,31.0,True,G
+3424,Jamal,Cain,,,20,2023,,,0,0,,,,,,8.0,True,F
+3493,Cole,Swider,,,20,2023,,,0,0,,,,,,20.0,True,F
+3995,Drew,Peterson,USC,,20,2023,,,0,0,6,,,205,,17.0,True,F
+4046,Jaime Jr.,Jaquez,UCLA,,20,2023,,,0,0,6,,,225,,11.0,True,G
+327,Kyle,Lowry,Villanova,Villanova/USA,20,2023,1986-03-25,USA,2006,15,6,0,1.83,196,88.9,7.0,True,G
+326,Kevin,Love,UCLA,UCLA/USA,20,2023,1988-09-07,USA,2008,13,6,8,2.03,251,113.9,,True,F-C
+86,Jimmy,Butler,Marquette,Marquette/USA,20,2023,1989-09-14,USA,2011,10,6,7,2.01,230,104.3,22.0,True,F
+417,Cameron,Payne,Murray State,Murray State/USA,21,2023,1994-08-08,USA,2015,6,6,1,1.85,183,83.0,15.0,True,G
+431,Bobby,Portis,Arkansas,Arkansas/USA,21,2023,1995-02-10,USA,2015,6,6,10,2.08,250,113.4,9.0,True,F
+115,Pat,Connaughton,Notre Dame,Notre Dame/USA,21,2023,1993-01-06,USA,2015,6,6,5,1.96,209,94.8,24.0,True,G
+46,Malik,Beasley,Florida State,Florida State/USA,21,2023,1996-11-26,USA,2016,5,6,4,1.93,187,84.8,5.0,True,G
+2034,Lindell,Wigginton,,,21,2023,,,0,0,,,,,,28.0,True,G
+2482,Marques,Bolden,,,21,2023,,,0,0,,,,,,24.0,True,C
+3405,MarJon,Beauchamp,,,21,2023,,,0,0,,,,,,,True,F
+3497,TyTy,Washington Jr.,,,21,2023,,,0,0,,,,,,,True,G
+3443,A.J.,Green,,,21,2023,,,0,0,,,,,,20.0,True,G
+3996,Jazian,Gortman,,,21,2023,,,0,0,6,,,170,,,True,G
+3997,Chris,Livingston,Kentucky,,21,2023,,,0,0,6,,,220,,7.0,True,F
+3998,Omari,Moore,San JosÃ© State,,21,2023,,,0,0,6,,,195,,,True,G
+3999,Drew,Timme,Gonzaga,,21,2023,,,0,0,6,,,235,,,True,F
+4047,Andre Jr.,Jackson,UConn,,21,2023,,,0,0,6,,,200,,44.0,True,G
+323,Brook,Lopez,Stanford,Stanford/USA,21,2023,1988-04-01,USA,2008,13,7,0,2.13,282,127.9,11.0,True,C
+325,Robin,Lopez,Stanford,Stanford/USA,21,2023,1988-04-01,USA,2008,13,7,0,2.13,281,127.5,33.0,True,C
+319,Damian,Lillard,Weber State,Weber State/USA,21,2023,1990-07-15,USA,2012,9,6,2,1.88,195,88.5,,True,G
+121,Jae,Crowder,Marquette,Marquette/USA,21,2023,1990-07-06,USA,2012,9,6,6,1.98,235,106.6,99.0,True,F
+361,Khris,Middleton,Texas A&M,Texas A&M/USA,21,2023,1991-08-12,USA,2012,9,6,7,2.01,222,100.7,22.0,True,F
+20,Giannis,Antetokounmpo,Filathlitikos,Filathlitikos/Greece,21,2023,1994-12-06,Greece,2013,8,6,11,2.11,242,109.8,34.0,True,F
+2408,Thanasis,Antetokounmpo,Panathinaikos,Panathinaikos/Greece,21,2023,1992-07-18,Greece,2015,3,6,6,1.98,219,99.3,43.0,True,F
+519,Karl-Anthony,Towns,Kentucky,Kentucky/USA,22,2023,1995-11-15,USA,2015,6,6,11,2.11,248,112.5,32.0,True,C-F
+945,Troy,Brown Jr.,Oregon,Oregon/USA,22,2023,1999-07-28,USA,2018,3,6,6,1.98,215,97.5,7.0,True,G-F
+1001,Shake,Milton,Southern Methodist,Southern Methodist/USA,22,2023,1996-09-26,USA,2018,3,6,5,1.96,205,93.0,18.0,True,G-F
+997,Jordan,McLaughlin,Southern California,Southern California/USA,22,2023,1996-04-09,USA,2019,2,5,11,1.8,185,83.9,6.0,True,G
+1845,Nickeil,Alexander-Walker,Virginia Tech,Virginia Tech/Canada,22,2023,1998-09-02,Canada,2019,2,6,5,1.96,205,93.0,6.0,True,G
+2146,Naz,Reid,,,22,2023,,,0,0,,,,,,11.0,True,C-F
+2584,Anthony,Edwards,Georgia,Georgia/USA,22,2023,2001-08-05,USA,2020,1,6,4,1.93,225,102.1,1.0,True,G
+2621,Jaden,McDaniels,Washington,Washington/USA,22,2023,2000-09-29,USA,2020,1,6,9,2.06,185,83.9,3.0,True,F
+3154,Daishen,Nix,NBA G League Ignite,NBA G League Ignite/USA,22,2023,2002-02-13,USA,2021,0,6,5,1.96,224,101.6,15.0,True,G
+2608,Vit,Krejci,Zaragoza,Zaragoza/Czech Republic,22,2023,2000-06-19,Czech Republic,2021,0,6,8,2.03,195,88.5,27.0,True,G
+3195,Matt,Ryan,Tennessee-Chattanooga,Tennessee-Chattanooga/USA,22,2023,1997-04-17,USA,2021,0,6,7,2.01,215,97.5,37.0,True,F
+2807,Luka,Garza,Iowa,Iowa/USA,22,2023,1998-12-27,USA,2021,0,6,10,2.08,243,110.2,55.0,True,C
+3474,Wendell,Moore Jr.,,,22,2023,,,0,0,,,,,,7.0,True,G
+3470,Josh,Minott,,,22,2023,,,0,0,,,,,,8.0,True,F
+3456,Trevor,Keels,,,22,2023,,,0,0,,,,,,3.0,True,G
+3465,Tyrese,Martin,,,22,2023,,,0,0,,,,,,22.0,True,G
+4001,Leonard,Miller,,,22,2023,,,0,0,6,,,210,,,True,F
+114,Mike,Conley,Ohio State,Ohio State/USA,22,2023,1987-10-11,USA,2007,14,6,1,1.85,175,79.4,11.0,True,G
+192,Rudy,Gobert,Cholet,Cholet/France,22,2023,1992-06-26,France,2013,8,7,1,2.16,258,117.0,27.0,True,C
+18,Kyle,Anderson,UCLA,UCLA/USA,22,2023,1993-09-20,USA,2014,7,6,9,2.06,230,104.3,5.0,True,F-G
+385,Larry,Nance Jr.,Wyoming,Wyoming/USA,23,2023,1993-01-01,USA,2015,6,6,7,2.01,245,111.1,22.0,True,F-C
+260,Brandon,Ingram,Duke,Duke/USA,23,2023,1997-09-02,USA,2016,5,6,8,2.03,190,86.2,14.0,True,F
+1071,Kaiser,Gates,Xavier,Xavier/USA,23,2023,1996-11-08,USA,0,0,6,7,2.01,225,102.1,30.0,True,F
+1902,Zion,Williamson,Duke,Duke/USA,23,2023,2000-07-06,USA,2019,2,6,6,1.98,284,128.8,1.0,True,F
+2611,Kira,Lewis Jr.,Alabama,Alabama/USA,23,2023,2001-04-06,USA,2020,1,6,1,1.85,170,77.1,13.0,True,G
+2668,Naji,Marshall,Xavier,Xavier/USA,23,2023,1998-01-24,USA,2020,1,6,7,2.01,220,99.8,8.0,True,F
+3195,Matt,Ryan,Tennessee-Chattanooga,Tennessee-Chattanooga/USA,23,2023,1997-04-17,USA,2021,0,6,7,2.01,215,97.5,37.0,True,F
+2846,Jeremiah,Robinson-Earl,Villanova,Villanova/USA,23,2023,2000-11-03,USA,2021,0,6,8,2.03,242,109.8,50.0,True,F
+2822,Herbert,Jones,Alabama,Alabama/USA,23,2023,1998-10-06,USA,2021,0,6,7,2.01,206,93.4,5.0,True,F
+2837,Trey,Murphy III,Virginia,Virginia/USA,23,2023,2000-06-18,USA,2021,0,6,8,2.03,206,93.4,25.0,True,F
+3462,E.J.,Liddell,,,23,2023,,,0,0,,,,,,,True,F
+2990,Jalen,Crutcher,Dayton,Dayton/USA,23,2023,1999-07-18,USA,0,0,6,2,1.88,175,79.4,17.0,True,G
+2941,Jose,Alvarado,Georgia Tech,Georgia Tech/USA,23,2023,1998-04-12,USA,2021,0,6,0,1.83,179,81.2,15.0,True,G
+3406,Dyson,Daniels,,,23,2023,,,0,0,,,,,,11.0,True,G
+3380,Malcolm,Hill,Illinois,Illinois/USA,23,2023,1995-10-26,USA,2021,0,6,6,1.98,220,99.8,14.0,True,F
+3421,Izaiah,Brockington,,,23,2023,,,0,0,,,,,,,True,G
+3486,Dereon,Seabron,,,23,2023,,,0,0,,,,,,,True,G
+4002,Jordan,Hawkins,UConn,,23,2023,,,0,0,6,,,195,,24.0,True,G
+4003,Trey,Jemison,UAB,,23,2023,,,0,0,6,,,260,,56.0,True,C
+4004,Tevian,Jones,Southern Utah,,23,2023,,,0,0,6,,,220,,55.0,True,G
+4005,Liam,Robbins,Vanderbilt,,23,2023,,,0,0,7,,,250,,4.0,True,C
+4048,Landers II,Nolley,Cincinnati,,23,2023,,,0,0,6,,,220,,2.0,True,G
+525,Jonas,Valanciunas,Lietuvos rytas Vilnius,Lietuvos rytas Vilnius/Lithuania,23,2023,1992-05-06,Lithuania,2012,9,6,11,2.11,265,120.2,17.0,True,C
+347,CJ,McCollum,Lehigh,Lehigh/USA,23,2023,1991-09-19,USA,2013,8,6,3,1.9,190,86.2,3.0,True,G
+571,Cody,Zeller,Indiana,Indiana/USA,23,2023,1992-10-05,USA,2013,0,,,,,,40.0,True,F-C
+609,Ryan,Arcidiacono,Villanova,Villanova/USA,24,2023,1994-03-26,USA,2017,4,6,3,1.9,195,88.5,51.0,True,G
+732,O.G.,Anunoby,Indiana,Indiana/United Kingdom,24,2023,1997-07-17,United Kingdom,2017,4,6,7,2.01,232,105.2,3.0,True,F
+978,Isaiah,Hartenstein,Zalgiris,Zalgiris/Germany,24,2023,1998-05-05,Germany,2018,3,7,0,2.13,250,113.4,55.0,True,C-F
+791,Josh,Hart,Villanova,Villanova/USA,24,2023,1995-03-06,USA,2017,4,6,5,1.96,215,97.5,11.0,True,G
+946,Jalen,Brunson,Villanova,Villanova/USA,24,2023,1996-08-31,USA,2018,3,6,1,1.85,190,86.2,11.0,True,G
+962,Donte,DiVincenzo,Villanova,Villanova/USA,24,2023,1997-01-31,USA,2018,3,6,4,1.93,203,92.1,,True,G
+1020,Mitchell,Robinson,Western Kentucky,Western Kentucky/USA,24,2023,1998-04-01,USA,2018,3,7,0,2.13,240,108.9,23.0,True,C-F
+1948,DaQuan,Jeffries,Tulsa,Tulsa/USA,24,2023,1997-08-30,USA,2019,3,6,5,1.96,225,102.1,8.0,True,G-F
+1846,RJ,Barrett,Duke,Duke/Canada,24,2023,2000-06-14,Canada,2019,2,6,6,1.98,214,97.1,9.0,True,F-G
+2811,Quentin,Grimes,Houston,Houston/USA,24,2023,2000-05-08,USA,2021,0,6,4,1.93,210,95.3,6.0,True,G
+1890,Isaiah,Roby,Nebraska,Nebraska/USA,24,2023,1998-02-03,USA,2019,2,6,8,2.03,230,104.3,22.0,True,F
+1903,Dylan,Windler,Belmont,Belmont/USA,24,2023,1996-09-22,USA,2020,1,6,6,1.98,196,88.9,9.0,True,G-F
+2111,Charlie,Brown Jr.,St. Joseph's (PA),St. Joseph's (PA)/USA,24,2023,1997-02-02,USA,2019,2,6,6,1.98,199,90.3,16.0,True,G
+2561,Precious,Achiuwa,Memphis,Memphis/Nigeria,24,2023,1999-09-19,Nigeria,2020,1,6,8,2.03,225,102.1,5.0,True,F
+2636,Immanuel,Quickley,Kentucky,Kentucky/USA,24,2023,1999-06-17,USA,2020,1,6,3,1.9,190,86.2,5.0,True,G
+2607,Nathan,Knight,William & Mary,William & Mary/USA,24,2023,1997-09-20,USA,2020,1,6,10,2.08,253,114.8,13.0,True,F-C
+2832,Miles,McBride,West Virginia,West Virginia/USA,24,2023,2000-09-08,USA,2021,0,6,1,1.85,195,88.5,2.0,True,G
+2849,Jericho,Sims,Texas,Texas/USA,24,2023,1998-10-20,USA,2021,0,6,9,2.06,250,113.4,45.0,True,C
+4006,Jaylen,Martin,,,24,2023,,,0,0,6,,,196,,,True,G
+4007,Jacob,Toppin,Kentucky,,24,2023,,,0,0,6,,,205,,,True,F
+4083,D.,Skapintsev,,,24,2023,,,0,0,,,,,,,True,C
+190,Taj,Gibson,Southern California,Southern California/USA,24,2023,1985-06-24,USA,2009,12,6,9,2.06,232,105.2,67.0,True,F
+177,Evan,Fournier,Poitiers Basket 86,Poitiers Basket 86/France,24,2023,1992-10-29,France,2012,9,6,6,1.98,205,93.0,13.0,True,G-F
+441,Julius,Randle,Kentucky,Kentucky/USA,24,2023,1994-11-29,USA,2014,7,6,8,2.03,250,113.4,30.0,True,F-C
+972,Shai,Gilgeous-Alexander,Kentucky,Kentucky/Canada,25,2023,1998-07-12,Canada,2018,3,6,6,1.98,180,81.6,2.0,True,G
+1044,Kenrich,Williams,TCU,TCU/USA,25,2023,1994-12-02,USA,2018,3,6,6,1.98,210,95.3,34.0,True,G-F
+2040,Luguentz,Dort,,,25,2023,,,0,0,,,,,,5.0,True,G
+2633,Aleksej,Pokusevski,Olympiacos,Olympiacos/Serbia,25,2023,2001-12-26,Serbia,2020,1,7,0,2.13,190,86.2,17.0,True,F
+2604,Isaiah,Joe,Arkansas,Arkansas/USA,25,2023,1999-07-02,USA,2020,1,6,4,1.93,165,74.8,7.0,True,G
+3404,Lindy,Waters III,Oklahoma State,Oklahoma State/USA,25,2023,1997-07-28,USA,2021,0,6,6,1.98,215,97.5,12.0,True,F
+2846,Jeremiah,Robinson-Earl,Villanova,Villanova/USA,25,2023,2000-11-03,USA,2021,0,6,8,2.03,242,109.8,50.0,True,F
+2831,Tre,Mann,Florida,Florida/USA,25,2023,2001-02-03,USA,2021,0,6,3,1.9,178,80.7,23.0,True,G
+2808,Josh,Giddey,NBA Global Academy,NBA Global Academy/Australia,25,2023,2002-10-10,Australia,2021,0,6,8,2.03,205,93.0,3.0,True,G
+2863,Aaron,Wiggins,Maryland,Maryland/USA,25,2023,1999-01-02,USA,2021,0,6,4,1.93,190,86.2,21.0,True,G
+3399,Olivier,Sarr,Kentucky,Kentucky/France,25,2023,1999-02-20,France,2021,0,,,,,,30.0,True,C
+3448,Chet,Holmgren,,,25,2023,,,0,0,,,,,,7.0,True,C-F
+3504,Jalen,Williams,,,25,2023,,,0,0,,,,,,8.0,True,G-F
+3505,Jaylin,Williams,,,25,2023,,,0,0,,,,,,6.0,True,F
+3432,Ousmane,Dieng,,,25,2023,,,0,0,,,,,,13.0,True,F
+3501,Jack,White,,,25,2023,,,0,0,,,,,,10.0,True,F
+4008,Keyontae,Johnson,Kansas State,,25,2023,,,0,0,6,,,235,,18.0,True,F
+4009,Cason,Wallace,Kentucky,,25,2023,,,0,0,6,,,193,,22.0,True,G
+52,Davis,Bertans,Baskonia,Baskonia/Latvia,25,2023,1992-11-12,Latvia,2016,5,6,10,2.08,225,102.1,44.0,True,F
+2739,Vasilije,Micic,,,25,2023,,,0,0,,,,,,,True,G
+779,Markelle,Fultz,Washington,Washington/USA,26,2023,1998-05-29,USA,2017,4,6,4,1.93,209,94.8,20.0,True,G
+801,Jonathan,Isaac,Florida State,Florida State/USA,26,2023,1997-10-03,USA,2017,3,6,10,2.08,230,104.3,1.0,True,F
+899,D.J.,Wilson,Michigan,Michigan/USA,26,2023,1996-02-19,USA,2017,0,,,,,,9.0,True,F
+950,Wendell,Carter Jr.,Duke,Duke/USA,26,2023,1999-04-16,USA,2018,3,6,10,2.08,270,122.5,34.0,True,C-F
+1037,Moritz,Wagner,Michigan,Michigan/Germany,26,2023,1997-04-26,Germany,2018,3,6,11,2.11,245,111.1,21.0,True,F-C
+1848,Goga,Bitadze,Mega Basket,Mega Basket/Georgia,26,2023,1999-07-20,Georgia,2019,2,7,0,2.13,250,113.4,88.0,True,C-F
+1883,Chuma,Okeke,Auburn,Auburn/USA,26,2023,1998-08-18,USA,2020,1,6,6,1.98,229,103.9,3.0,True,F
+1892,Admiral,Schofield,Tennessee,Tennessee/United Kingdom,26,2023,1997-03-30,United Kingdom,2019,1,6,5,1.96,241,109.3,25.0,True,F
+2563,Cole,Anthony,North Carolina,North Carolina/USA,26,2023,2000-05-15,USA,2020,1,6,3,1.9,185,83.9,50.0,True,G
+2671,Trevelin,Queen,New Mexico State,New Mexico State/USA,26,2023,1997-02-25,USA,2021,0,6,6,1.98,190,86.2,8.0,True,G
+3398,Brandon,Williams,Arizona,Arizona/USA,26,2023,1999-11-22,USA,2021,0,6,2,1.88,190,86.2,8.0,True,G
+2858,Franz,Wagner,Michigan,Michigan/Germany,26,2023,2001-08-27,Germany,2021,0,6,10,2.08,220,99.8,22.0,True,F
+2852,Jalen,Suggs,Gonzaga,Gonzaga/USA,26,2023,2001-06-03,USA,2021,0,6,5,1.96,205,93.0,4.0,True,G
+2833,Mac,McClung,Texas Tech,Texas Tech/USA,26,2023,1999-01-06,USA,2021,0,6,2,1.88,185,83.9,37.0,True,G
+3414,Paolo,Banchero,,,26,2023,,,0,0,,,,,,5.0,True,F
+3449,Caleb,Houstan,,,26,2023,,,0,0,,,,,,2.0,True,G
+3478,Daeqwon,Plowden,,,26,2023,,,0,0,,,,,,29.0,True,G-F
+4010,Anthony,Black,Arkansas,,26,2023,,,0,0,6,,,200,,,True,G
+4011,Jett,Howard,Michigan,,26,2023,,,0,0,6,,,215,,,True,G
+220,Gary,Harris,Michigan State,Michigan State/USA,26,2023,1994-09-14,USA,2014,7,6,4,1.93,210,95.3,14.0,True,G
+258,Joe,Ingles,Maccabi Tel Aviv,Maccabi Tel Aviv/Australia,26,2023,1987-10-02,Australia,2014,7,6,8,2.03,220,99.8,,True,F-G
+407,Kelly,Oubre Jr.,Kansas,Kansas/USA,27,2023,1995-12-09,USA,2015,6,6,6,1.98,203,92.1,12.0,True,F-G
+818,Furkan,Korkmaz,Anadolu Efes,Anadolu Efes/Turkey,27,2023,1997-07-24,Turkey,2017,4,6,7,2.01,202,91.6,30.0,True,G-F
+249,Danuel,House Jr.,Texas A&M,Texas A&M/USA,27,2023,1993-06-07,USA,2016,5,6,6,1.98,220,99.8,25.0,True,F-G
+932,Mo,Bamba,Texas,Texas/USA,27,2023,1998-05-12,USA,2018,3,7,0,2.13,231,104.8,11.0,True,C
+998,De'Anthony,Melton,Southern California,Southern California/USA,27,2023,1998-05-28,USA,2018,3,6,2,1.88,200,90.7,8.0,True,G
+2619,Tyrese,Maxey,Kentucky,Kentucky/USA,27,2023,2000-11-04,USA,2020,1,6,2,1.88,200,90.7,,True,G
+2638,Paul,Reed,DePaul,DePaul/USA,27,2023,1999-06-14,USA,2020,1,6,9,2.06,210,95.3,44.0,True,F
+2839,Filip,Petrusev,Gonzaga,Gonzaga/Serbia,27,2023,2000-04-15,Serbia,0,0,6,11,2.11,225,102.1,,True,C
+2617,Kenyon,Martin Jr.,IMG Academy (FL),IMG Academy (FL)/USA,27,2023,2001-01-06,USA,2020,1,6,5,1.96,215,97.5,6.0,True,F
+2851,Jaden,Springer,Tennessee,Tennessee/USA,27,2023,2002-09-25,USA,2021,0,6,4,1.93,202,91.6,11.0,True,G
+2804,David,Duke Jr.,Providence,Providence/USA,27,2023,1999-10-13,USA,2021,0,6,4,1.93,204,92.5,6.0,True,G
+2917,Javonte,Smart,Louisiana State,Louisiana State/USA,27,2023,1999-06-03,USA,2021,0,6,4,1.93,205,93.0,15.0,True,G
+3463,Kenneth,Lofton Jr.,,,27,2023,,,0,0,,,,,,6.0,True,F
+4012,Terquavion,Smith,NC State,,27,2023,,,0,0,6,,,160,,23.0,True,G
+4049,Ricky IV,Council,Arkansas,,27,2023,,,0,0,6,,,207,,16.0,True,G
+520,P.J.,Tucker,Texas,Texas/USA,27,2023,1985-05-05,USA,2006,10,6,5,1.96,245,111.1,17.0,True,F
+40,Nicolas,Batum,Le Mans,Le Mans/France,27,2023,1988-12-14,France,2008,13,6,8,2.03,230,104.3,33.0,True,G-F
+53,Patrick,Beverley,Arkansas,Arkansas/USA,27,2023,1988-07-12,USA,2012,9,6,1,1.85,180,81.6,21.0,True,G
+203,Danny,Green,North Carolina,North Carolina/USA,27,2023,1987-06-22,USA,2009,12,6,6,1.98,215,97.5,14.0,True,G
+373,Marcus,Morris Sr.,Kansas,Kansas/USA,27,2023,1989-09-02,USA,2011,10,6,8,2.03,218,98.9,8.0,True,F
+222,Tobias,Harris,Tennessee,Tennessee/USA,27,2023,1992-07-15,USA,2011,10,6,7,2.01,226,102.5,12.0,True,F
+118,Robert,Covington,Tennessee State,Tennessee State/USA,27,2023,1990-12-14,USA,2013,8,6,7,2.01,209,94.8,23.0,True,F
+159,Joel,Embiid,Kansas,Kansas/Cameroon,27,2023,1994-03-16,Cameroon,2016,5,7,0,2.13,280,127.0,21.0,True,C-F
+64,Devin,Booker,Kentucky,Kentucky/USA,28,2023,1996-10-30,USA,2015,6,6,5,1.96,206,93.4,1.0,True,G
+926,Grayson,Allen,Duke,Duke/USA,28,2023,1995-10-08,USA,2018,3,6,4,1.93,198,89.8,7.0,True,G
+2565,Udoka,Azubuike,Kansas,Kansas/Nigeria,28,2023,1999-09-17,Nigeria,2020,1,7,0,2.13,270,122.5,20.0,True,C-F
+934,Keita,Bates-Diop,Ohio State,Ohio State/USA,28,2023,1996-01-23,USA,2018,3,6,8,2.03,229,103.9,31.0,True,F
+999,Chimezie,Metu,Southern California,Southern California/USA,28,2023,1997-03-22,USA,2018,3,6,9,2.06,225,102.1,7.0,True,F-C
+1010,Josh,Okogie,Georgia Tech,Georgia Tech/Nigeria,28,2023,1998-09-01,Nigeria,2018,3,6,4,1.93,213,96.6,2.0,True,G
+1040,Yuta,Watanabe,George Washington,George Washington/Japan,28,2023,1994-10-13,Japan,2018,3,6,9,2.06,215,97.5,18.0,True,G-F
+966,Drew,Eubanks,Oregon State,Oregon State/USA,28,2023,1997-02-01,USA,2018,0,,,,,,24.0,True,F-C
+1849,Bol,Bol,Oregon,Oregon/Sudan,28,2023,1999-11-16,Sudan,2019,2,7,2,2.18,220,99.8,10.0,True,C-F
+1875,Nassir,Little,North Carolina,North Carolina/USA,28,2023,2000-02-11,USA,2019,2,6,5,1.96,220,99.8,10.0,True,F-G
+2610,Saben,Lee,Vanderbilt,Vanderbilt/USA,28,2023,1999-06-23,USA,2020,1,6,2,1.88,183,83.0,38.0,True,G
+2820,Keon,Johnson,Tennessee,Tennessee/USA,28,2023,2002-03-10,USA,2021,0,6,4,1.93,185,83.9,6.0,True,G
+3341,Jordan,Goodwin,St. Louis,St. Louis/USA,28,2023,1998-10-23,USA,2021,0,,,,,,7.0,True,G
+153,Kevin,Durant,Texas,Texas/USA,28,2023,1988-09-29,USA,2007,13,6,10,2.08,240,108.9,7.0,True,F
+196,Eric,Gordon,Indiana,Indiana/USA,28,2023,1988-12-25,USA,2008,13,6,3,1.9,215,97.5,10.0,True,G
+45,Bradley,Beal,Florida,Florida/USA,28,2023,1993-06-28,USA,2012,9,6,4,1.93,207,93.9,3.0,True,G
+398,Jusuf,Nurkic,Cedevita,Cedevita/Bosnia and Herzegovina,28,2023,1994-08-23,Bosnia and Herzegovina,2014,7,6,11,2.11,290,131.5,27.0,True,C
+71,Malcolm,Brogdon,Virginia,Virginia/USA,29,2023,1992-12-11,USA,2016,5,6,5,1.96,229,103.9,13.0,True,G
+987,Kevin,Knox II,Kentucky,Kentucky/USA,29,2023,1999-08-11,USA,2018,3,6,7,2.01,215,97.5,5.0,True,F
+1023,Anfernee,Simons,Edgewater HS (FL),Edgewater HS (FL)/USA,29,2023,1999-06-08,USA,2018,3,6,3,1.9,181,82.1,1.0,True,G
+930,Deandre,Ayton,Arizona,Arizona/Bahamas,29,2023,1998-07-23,Bahamas,2018,3,6,11,2.11,250,113.4,22.0,True,C
+1045,Robert,Williams III,Texas A&M,Texas A&M/USA,29,2023,1997-10-17,USA,2018,3,6,9,2.06,237,107.5,44.0,True,C-F
+2160,Moses,Brown,,,29,2023,,,0,0,,,,,,6.0,True,C
+1896,Matisse,Thybulle,Washington,Washington/USA,29,2023,1997-03-04,USA,2019,2,6,5,1.96,201,91.2,22.0,True,G-F
+2620,Skylar,Mays,Louisiana State,Louisiana State/USA,29,2023,1997-09-05,USA,2020,1,6,4,1.93,205,93.0,4.0,True,G
+2859,Ish,Wainright,Baylor,Baylor/USA,29,2023,1994-09-12,USA,2021,0,6,5,1.96,250,113.4,12.0,True,F
+3408,Scoot,Henderson,,,29,2023,,,0,0,,,,,,,False,
+3487,Shaedon,Sharpe,,,29,2023,,,0,0,,,,,,17.0,True,G
+3418,Jamaree,Bouyea,,,29,2023,,,0,0,,,,,,11.0,True,G
+3496,Jabari,Walker,,,29,2023,,,0,0,,,,,,34.0,True,F
+3714,Justin,Minaya,,,29,2023,,,0,0,,,,,,14.0,True,F
+4014,Ibou,Badji,,,29,2023,,,0,0,7,,,240,,41.0,True,C
+4015,Toumani,Camara,Dayton,,29,2023,,,0,0,6,,,220,,20.0,True,F
+4017,Kris,Murray,Iowa,,29,2023,,,0,0,6,,,215,,8.0,True,F
+4018,Duop,Reath,LSU,,29,2023,,,0,0,6,,,245,,,True,C
+4069,R.,Rupert,,,29,2023,,,0,0,,,,,,,True,G
+200,Jerami,Grant,Syracuse,Syracuse/USA,29,2023,1994-03-12,USA,2014,7,6,8,2.03,210,95.3,9.0,True,F
+3614,George,Conditt IV,,,29,2023,,,0,0,,,,,,44.0,True,F
+331,Trey,Lyles,Kentucky,Kentucky/Canada,30,2023,1995-11-05,Canada,2015,6,6,9,2.06,234,106.1,41.0,True,F
+463,Domantas,Sabonis,Gonzaga,Gonzaga/Lithuania,30,2023,1996-05-03,Lithuania,2016,5,6,11,2.11,240,108.9,10.0,True,F-C
+776,De'Aaron,Fox,Kentucky,Kentucky/USA,30,2023,1997-12-20,USA,2017,4,6,3,1.9,185,83.9,5.0,True,G
+842,Malik,Monk,Kentucky,Kentucky/USA,30,2023,1998-02-04,USA,2017,4,6,3,1.9,200,90.7,,True,G
+980,Kevin,Huerter,Maryland,Maryland/USA,30,2023,1998-08-27,USA,2018,3,6,7,2.01,198,89.8,9.0,True,G-F
+947,Deonte,Burton,Iowa State,Iowa State/USA,30,2023,1994-01-31,USA,0,2,6,4,1.93,240,108.9,30.0,True,G-F
+1934,Juan,Toscano-Anderson,,,30,2023,,,0,0,,,,,,95.0,True,F
+1882,Jaylen,Nowell,Washington,Washington/USA,30,2023,1999-07-09,USA,2019,2,6,4,1.93,201,91.2,4.0,True,G
+2839,Filip,Petrusev,Gonzaga,Gonzaga/Serbia,30,2023,2000-04-15,Serbia,0,0,6,11,2.11,225,102.1,,True,C
+2588,Jordan,Ford,St. Mary's College,St. Mary's College/USA,30,2023,1998-05-26,USA,0,0,6,1,1.85,175,79.4,,True,G
+2803,Chris,Duarte,Oregon,Oregon/Dominican Republic,30,2023,1997-06-13,Dominican Republic,2021,0,6,5,1.96,190,86.2,3.0,True,G
+2805,Kessler,Edwards,Pepperdine,Pepperdine/USA,30,2023,2000-08-09,USA,2021,0,6,7,2.01,203,92.1,14.0,True,F
+2834,Davion,Mitchell,Baylor,Baylor/USA,30,2023,1998-09-05,USA,2021,0,6,0,1.83,202,91.6,15.0,True,G
+3475,Keegan,Murray,,,30,2023,,,0,0,,,,,,13.0,True,F
+3436,Keon,Ellis,,,30,2023,,,0,0,,,,,,23.0,True,G
+4020,Colby,Jones,Xavier,,30,2023,,,0,0,6,,,205,,,True,G
+4021,Jalen,Slawson,Furman,,30,2023,,,0,0,6,,,218,,,True,F
+4022,Sasha,Vezenkov,,,30,2023,,,0,0,6,,,225,,,True,F
+353,JaVale,McGee,Nevada,Nevada/USA,30,2023,1988-01-19,USA,2008,13,7,0,2.13,270,122.5,,True,C-F
+36,Harrison,Barnes,North Carolina,North Carolina/USA,30,2023,1992-05-30,USA,2012,9,6,8,2.03,225,102.1,40.0,True,F
+303,Jeremy,Lamb,Connecticut,Connecticut/USA,30,2023,1992-05-30,USA,2012,9,6,5,1.96,180,81.6,26.0,True,G-F
+313,Alex,Len,Maryland,Maryland/Ukraine,30,2023,1993-06-16,Ukraine,2013,8,7,0,2.13,250,113.4,25.0,True,C
+854,Cedi,Osman,Anadolu Efes,Anadolu Efes/Turkey,31,2023,1995-04-08,Turkey,2017,4,6,7,2.01,230,104.3,16.0,True,F
+762,Zach,Collins,Gonzaga,Gonzaga/USA,31,2023,1997-11-19,USA,2017,3,6,11,2.11,250,113.4,23.0,True,F-C
+973,Devonte',Graham,Kansas,Kansas/USA,31,2023,1995-02-22,USA,2018,3,6,1,1.85,195,88.5,4.0,True,G
+1872,Keldon,Johnson,Kentucky,Kentucky/USA,31,2023,1999-10-11,USA,2019,2,6,6,1.98,220,99.8,3.0,True,F-G
+2790,Charles,Bassey,Western Kentucky,Western Kentucky/Nigeria,31,2023,2000-10-28,Nigeria,2021,0,6,9,2.06,230,104.3,23.0,True,C-F
+2661,Devin,Vassell,Florida State,Florida State/USA,31,2023,2000-08-23,USA,2020,1,6,5,1.96,200,90.7,24.0,True,G-F
+2606,Tre,Jones,Duke,Duke/USA,31,2023,2000-01-08,USA,2020,1,6,1,1.85,185,83.9,33.0,True,G
+2830,Sandro,Mamukelashvili,Seton Hall,Seton Hall/Georgia,31,2023,1999-05-23,Georgia,2021,0,6,9,2.06,240,108.9,54.0,True,F-C
+3425,Julian,Champagnie,,,31,2023,,,0,0,,,,,,55.0,True,F
+3419,Malaki,Branham,,,31,2023,,,0,0,,,,,,22.0,True,F
+3499,Blake,Wesley,,,31,2023,,,0,0,,,,,,14.0,True,G
+3490,Jeremy,Sochan,,,31,2023,,,0,0,,,,,,10.0,True,F
+3415,Dominick,Barlow,,,31,2023,,,0,0,,,,,,26.0,True,F
+4023,Charles,Bediako,Alabama,,31,2023,,,0,0,6,,,220,,27.0,True,C
+4024,Sidy,Cissoko,,,31,2023,,,0,0,6,,,225,,25.0,True,G
+4025,Sir'Jabari,Rice,Texas,,31,2023,,,0,0,6,,,170,,11.0,True,G
+4026,Victor,Wembanyama,,,31,2023,,,0,0,7,,,225,,1.0,True,C
+739,Khem,Birch,UNLV,UNLV/Canada,31,2023,1992-09-28,Canada,2017,4,6,9,2.06,233,105.7,24.0,True,C
+351,Doug,McDermott,Creighton,Creighton/USA,31,2023,1992-01-03,USA,2014,7,6,7,2.01,225,102.1,17.0,True,F
+428,Jakob,Poeltl,Utah,Utah/Austria,38,2023,1995-10-15,Austria,2016,5,7,1,2.16,245,111.1,25.0,True,C
+479,Pascal,Siakam,New Mexico State,New Mexico State/Cameroon,38,2023,1994-04-02,Cameroon,2016,5,6,8,2.03,230,104.3,43.0,True,F
+732,O.G.,Anunoby,Indiana,Indiana/United Kingdom,38,2023,1997-07-17,United Kingdom,2017,4,6,7,2.01,232,105.2,3.0,True,F
+745,Chris,Boucher,Oregon,Oregon/Saint Lucia,38,2023,1993-01-11,Saint Lucia,2017,4,6,9,2.06,200,90.7,25.0,True,F-C
+2557,Jontay,Porter,Missouri,Missouri/USA,38,2023,1999-11-15,USA,2020,0,6,11,2.11,240,108.9,4.0,True,C-F
+1058,Gary,Trent Jr.,Duke,Duke/USA,38,2023,1999-01-18,USA,2018,3,6,5,1.96,209,94.8,33.0,True,G-F
+1846,RJ,Barrett,Duke,Duke/Canada,38,2023,2000-06-14,Canada,2019,2,6,6,1.98,214,97.1,9.0,True,F-G
+1880,Jalen,McDaniels,San Diego State,San Diego State/USA,38,2023,1998-01-31,USA,2019,2,6,9,2.06,205,93.0,6.0,True,F-C
+2561,Precious,Achiuwa,Memphis,Memphis/Nigeria,38,2023,1999-09-19,Nigeria,2020,1,6,8,2.03,225,102.1,5.0,True,F
+2636,Immanuel,Quickley,Kentucky,Kentucky/USA,38,2023,1999-06-17,USA,2020,1,6,3,1.9,190,86.2,5.0,True,G
+2587,Malachi,Flynn,San Diego State,San Diego State/USA,38,2023,1998-05-09,USA,2020,1,6,1,1.85,175,79.4,22.0,True,G
+2878,Jeff,Dowtin,Rhode Island,Rhode Island/USA,38,2023,1997-05-10,USA,2021,0,6,3,1.9,180,81.6,15.0,True,G
+2789,Scottie,Barnes,Florida State,Florida State/USA,38,2023,2001-08-01,USA,2021,0,6,7,2.01,225,102.1,4.0,True,F
+3464,Makur,Maker,,,38,2023,,,0,0,,,,,,,True,C
+3447,Ron,Harper Jr.,,,38,2023,,,0,0,,,,,,8.0,True,F
+3440,Javon,Freeman-Liberty,,,38,2023,,,0,0,,,,,,,True,G
+3445,Mouhamadou,Gueye,,,38,2023,,,0,0,,,,,,17.0,True,F
+4027,Gradey,Dick,Kansas,,38,2023,,,0,0,6,,,205,,1.0,True,G
+4028,Markquis,Nowell,Kansas State,,38,2023,,,0,0,5,,,160,,24.0,True,G
+570,Thaddeus,Young,Georgia Tech,Georgia Tech/USA,38,2023,1988-06-21,USA,2007,14,6,8,2.03,235,106.6,21.0,True,F
+507,Garrett,Temple,Louisiana State,Louisiana State/USA,38,2023,1986-05-08,USA,2009,11,6,5,1.96,195,88.5,41.0,True,G-F
+472,Dennis,Schroder,Braunschweig,Braunschweig/Germany,38,2023,1993-09-15,Germany,2013,8,6,1,1.85,172,78.0,17.0,True,G
+430,Otto,Porter Jr.,Georgetown,Georgetown/USA,38,2023,1993-06-03,USA,2013,8,6,8,2.03,198,89.8,32.0,True,F
+152,Kris,Dunn,Providence,Providence/USA,40,2023,1994-03-18,USA,2016,0,,,,,,18.0,False,
+830,Lauri,Markkanen,Arizona,Arizona/Finland,40,2023,1997-05-22,Finland,2017,4,6,11,2.11,240,108.9,23.0,True,F-C
+761,John,Collins,Wake Forest,Wake Forest/USA,40,2023,1997-09-23,USA,2017,4,6,9,2.06,226,102.5,20.0,True,F-C
+1021,Collin,Sexton,Alabama,Alabama/USA,40,2023,1999-01-04,USA,2018,3,6,1,1.85,190,86.2,2.0,True,G
+1874,Romeo,Langford,Indiana,Indiana/USA,40,2023,1999-10-25,USA,2019,2,6,5,1.96,216,98.0,35.0,True,G-F
+1867,Talen,Horton-Tucker,Iowa State,Iowa State/USA,40,2023,2000-11-25,USA,2019,2,6,4,1.93,234,106.1,,True,G
+1891,Luka,Samanic,,,40,2023,,,0,0,,,,,,99.0,False,
+2785,Omer,Yurtseven,Georgetown,Georgetown/Turkey,40,2023,1998-06-19,Turkey,2021,0,6,11,2.11,275,124.7,77.0,True,C
+2799,Josh,Christopher,Arizona State,Arizona State/USA,40,2023,2001-12-08,USA,2021,0,6,3,1.9,215,97.5,9.0,True,G
+3411,Ochai,Agbaji,,,40,2023,,,0,0,,,,,,30.0,True,G
+3454,Johnny,Juzang,,,40,2023,,,0,0,,,,,,33.0,True,G
+3358,Micah,Potter,Wisconsin,Wisconsin/USA,40,2023,1998-04-06,USA,2021,0,,,,,,20.0,True,C
+3457,Walker,Kessler,,,40,2023,,,0,0,,,,,,24.0,True,C
+3438,Simone,Fontecchio,,,40,2023,,,0,0,,,,,,16.0,True,F
+4029,Keyonte,George,Baylor,,40,2023,,,0,0,6,,,185,,3.0,True,G
+4031,Taylor,Hendricks,UCF,,40,2023,,,0,0,6,,,210,,,True,F
+4034,Brice,Sensabaugh,Ohio State,,40,2023,,,0,0,6,,,235,,8.0,True,F
+404,Kelly,Olynyk,Gonzaga,Gonzaga/Canada,40,2023,1991-04-19,Canada,2013,8,6,11,2.11,240,108.9,41.0,True,F-C
+109,Jordan,Clarkson,Missouri,Missouri/USA,40,2023,1992-06-07,USA,2014,7,6,4,1.93,194,88.0,,True,G
+285,Tyus,Jones,Duke,Duke/USA,41,2023,1996-05-10,USA,2015,6,6,0,1.83,196,88.9,21.0,True,G
+564,Delon,Wright,Utah,Utah/USA,41,2023,1992-04-26,USA,2015,6,6,5,1.96,185,83.9,55.0,True,G
+820,Kyle,Kuzma,Utah,Utah/USA,41,2023,1995-07-24,USA,2017,4,6,9,2.06,221,100.2,33.0,True,F
+1022,Landry,Shamet,Wichita State,Wichita State/USA,41,2023,1997-03-13,USA,2018,3,6,4,1.93,190,86.2,14.0,True,G
+1859,Daniel,Gafford,Arkansas,Arkansas/USA,41,2023,1998-10-01,USA,2019,2,6,9,2.06,234,106.1,21.0,True,F-C
+1887,Jordan,Poole,Michigan,Michigan/USA,41,2023,1999-06-19,USA,2019,2,6,4,1.93,194,88.0,3.0,True,G
+2564,Deni,Avdija,Maccabi Tel Aviv,Maccabi Tel Aviv/Israel,41,2023,2001-01-03,Israel,2020,1,6,9,2.06,210,95.3,9.0,True,F
+2796,Jared,Butler,Baylor,Baylor/USA,41,2023,2000-08-25,USA,2021,0,6,3,1.9,193,87.5,13.0,True,G
+2590,Anthony,Gill,Virginia,Virginia/USA,41,2023,1992-10-17,USA,2020,1,6,7,2.01,230,104.3,16.0,True,F
+2825,Corey,Kispert,Gonzaga,Gonzaga/USA,41,2023,1999-03-03,USA,2021,0,6,6,1.98,224,101.6,24.0,True,F
+2838,Eugene,Omoruyi,Oregon,Oregon/Nigeria,41,2023,1997-02-14,Nigeria,2021,0,,,,,,97.0,True,F
+3428,Johnny,Davis,,,41,2023,,,0,0,,,,,,1.0,True,G
+3413,Patrick,Baldwin Jr.,,,41,2023,,,0,0,,,,,,7.0,True,F
+3484,Ryan,Rollins,,,41,2023,,,0,0,,,,,,2.0,True,G
+3597,John,Butler Jr.,,,41,2023,,,0,0,,,,,,,True,C
+3576,Jules,Bernard,,,41,2023,,,0,0,,,,,,24.0,True,G
+4035,Chase,Audige,Northwestern,,41,2023,,,0,0,6,,,200,,17.0,True,G
+4036,Bilal,Coulibaly,,,41,2023,,,0,0,6,,,195,,,True,SG
+181,Danilo,Gallinari,Olimpia Milano,Olimpia Milano/Italy,41,2023,1988-08-08,Italy,2008,12,6,10,2.08,236,107.0,8.0,True,F
+190,Taj,Gibson,Southern California,Southern California/USA,41,2023,1985-06-24,USA,2009,12,6,9,2.06,232,105.2,67.0,True,F
+384,Mike,Muscala,Bucknell,Bucknell/USA,41,2023,1991-07-01,USA,2013,8,6,10,2.08,240,108.9,33.0,True,F-C
+1191,Xavier,Cooks,,,41,2023,,,0,0,,,,,,40.0,True,G-F
+2212,Dakarai,Tucker,,,165,2023,,,0,0,,,,,,4.0,True,F
+734,Dwayne,Bacon,,,165,2023,,,0,0,,,,,,8.0,True,G-F
+887,Sindarius,Thornwell,South Carolina,South Carolina/USA,165,2023,1994-11-15,USA,2017,4,6,4,1.93,215,97.5,15.0,True,G
+2580,Mamadi,Diakite,Virginia,Virginia/Guinea,165,2023,1997-01-21,Guinea,2020,0,,,,,,12.0,True,F
+1899,Quinndary,Weatherspoon,Mississippi State,Mississippi State/USA,165,2023,1996-09-10,USA,2019,2,6,3,1.9,205,93.0,12.0,True,G
+2594,Ashton,Hagans,,,165,2023,,,0,0,,,,,,22.0,True,G-F
+3908,Jason,Siggers,,,165,2023,,,0,0,,,,,,1.0,False,
+2478,Jonathan,Mor,,,165,2023,,,0,0,,,,,,4.0,False,
+4062,E.,Alber,,,165,2023,,,0,0,,,,,,,True,F
+4063,Y.,Atias,,,165,2023,,,0,0,,,,,,,True,F
+4064,Y.,Berman,,,165,2023,,,0,0,,,,,,,True,F
+4065,J.,Ducree,,,165,2023,,,0,0,,,,,,,True,F
+4066,O.,Hai,,,165,2023,,,0,0,,,,,,,True,F
+4067,N.,Missia-Dio,,,165,2023,,,0,0,,,,,,,True,F
+4068,J.,Ruiz,,,165,2023,,,0,0,,,,,,,True,F
+87,Bruno,Caboclo,,,165,2023,,,0,0,,,,,,5.0,True,F
+1820,Tahjere,McCall,,,166,2023,,,0,0,,,,,,6.0,True,G
+3643,Akoldah,Gak,,,166,2023,,,0,0,,,,,,76.0,True,F
+4050,B.,Kuol,,,166,2023,,,0,0,,,,,,,True,F
+4051,L.,Mayen,,,166,2023,,,0,0,,,,,,,True,F
+4052,P.,Miller,,,166,2023,,,0,0,,,,,,,True,G
+4053,B.,Klintman,,,166,2023,,,0,0,,,,,,,True,G
+4054,J.,Antonio,,,166,2023,,,0,0,,,,,,,True,G
+4055,T.,Armstrong,,,166,2023,,,0,0,,,,,,,True,G
+4056,J.,Roberts,,,166,2023,,,0,0,,,,,,,True,G
+4071,L.,Anderson,,,166,2023,,,0,0,,,,,,,True,F
+418,Elfrid,Payton,Louisana-Lafayette,Louisana-Lafayette/USA,166,2023,1994-02-22,USA,2014,7,6,3,1.9,195,88.5,2.0,True,G
+3794,Sam,Waardenburg,,,166,2023,,,0,0,,,,,,33.0,True,F
+1050,Tom,Abercrombie,,,168,2023,,,0,0,,,,,,10.0,True,
+833,Mangok,Mathiang,Louisville,Louisville/Australia,168,2023,1992-10-08,Australia,2017,1,6,10,2.08,230,104.3,9.0,True,F
+2077,Zylan,Cheatham,Arizona State,Arizona State/USA,168,2023,1995-11-17,USA,2019,1,6,8,2.03,220,99.8,45.0,True,C
+2328,William,McDowell-White,,,168,2023,,,0,0,,,,,,,True,G
+2609,Anthony,Lamb,Vermont,Vermont/USA,168,2023,1998-01-20,USA,2020,1,6,6,1.98,227,103.0,33.0,True,F
+4057,P.,Jackson-Cartwright,,,168,2023,,,0,0,,,,,,,True,G
+4058,D.,Fotu,,,168,2023,,,0,0,,,,,,,True,F
+4059,C.,Gliddon,,,168,2023,,,0,0,,,,,,,True,F
+4060,I.,Le'Afa,,,168,2023,,,0,0,,,,,,,True,G
+4061,,Mcnaught,,,168,2023,,,0,0,,,,,,,True,G
+4072,D.,Kelman-Poto,,,168,2023,,,0,0,,,,,,,True,F
+4073,M.,Rubstavicius,,,168,2023,,,0,0,,,,,,,True,F
+859,Dane,Pineau,,,168,2023,,,0,0,,,,,,22.0,True,C
+1876,Didi,Louzada,Sydney Kings,Sydney Kings/Brazil,169,2023,1999-07-02,Brazil,2020,1,6,5,1.96,188,85.3,35.0,True,G
+4074,G.,Jau,,,169,2023,,,0,0,,,,,,,True,F
+4075,M.,Filipovity,,,169,2023,,,0,0,,,,,,,True,F
+4076,G.,Deodato,,,169,2023,,,0,0,,,,,,,True,SF
+4077,M.,Leoni,,,169,2023,,,0,0,,,,,,,True,F
+4078,M.,Tavares,,,169,2023,,,0,0,,,,,,,True,F
+4079,F.,Motta,,,169,2023,,,0,0,,,,,,,True,F
+4080,,Olivinha,,,169,2023,,,0,0,,,,,,,True,F
+4081,M.,Cuello,,,169,2023,,,0,0,,,,,,,True,F
+4082,C.,Brandao,,,169,2023,,,0,0,,,,,,,True,F
+1507,Scott,Machado,Iona,Iona/USA,169,2023,1990-06-08,USA,2012,1,6,1,1.85,205,93.0,10.0,True,G
+1149,Franco,Balbi,,,169,2023,,,0,0,,,,,,6.0,True,

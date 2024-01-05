@@ -56,8 +56,8 @@ def cloud_pipeline():
 
     # Start working on BigQuery
 
-    games_gcs_to_bronze = aql.load_file(
-        task_id='games_gcs_to_bronze',
+    games_gcs_to_raw = aql.load_file(
+        task_id='games_gcs_to_raw',
         input_file=File(
             'gs://mavericks_data/raw/games.csv',
             conn_id='gcp',
@@ -66,13 +66,13 @@ def cloud_pipeline():
         output_table=Table(
             name='raw_games',
             conn_id='gcp',
-            metadata=Metadata(schema='bronze')
+            metadata=Metadata(schema='raw')
         ),
         use_native_support=False,
     )
 
-    players_game_stats_gcs_to_bronze = aql.load_file(
-        task_id='players_game_stats_gcs_to_bronze',
+    players_game_stats_gcs_to_raw = aql.load_file(
+        task_id='players_game_stats_gcs_to_raw',
         input_file=File(
             'gs://mavericks_data/raw/players_game_stats.csv',
             conn_id='gcp',
@@ -81,13 +81,13 @@ def cloud_pipeline():
         output_table=Table(
             name='raw_players_game_stats',
             conn_id='gcp',
-            metadata=Metadata(schema='bronze')
+            metadata=Metadata(schema='raw')
         ),
         use_native_support=False,
     )
 
-    total_game_stats_gcs_to_bronze = aql.load_file(
-        task_id='total_game_stats_gcs_to_bronze',
+    total_game_stats_gcs_to_raw = aql.load_file(
+        task_id='total_game_stats_gcs_to_raw',
         input_file=File(
             'gs://mavericks_data/raw/total_game_stats.csv',
             conn_id='gcp',
@@ -96,7 +96,7 @@ def cloud_pipeline():
         output_table=Table(
             name='raw_total_game_stats',
             conn_id='gcp',
-            metadata=Metadata(schema='bronze')
+            metadata=Metadata(schema='raw')
         ),
         use_native_support=False,
     )
@@ -116,9 +116,9 @@ def cloud_pipeline():
         upload_games_to_gcs,
         upload_players_game_stats_to_gcs,
         upload_total_game_stats_to_gcs,
-        games_gcs_to_bronze,
-        players_game_stats_gcs_to_bronze,
-        total_game_stats_gcs_to_bronze,
+        games_gcs_to_raw,
+        players_game_stats_gcs_to_raw,
+        total_game_stats_gcs_to_raw,
         check_load(),
         trigger_dbt
     )
