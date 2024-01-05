@@ -38,3 +38,24 @@ checks for raw_total_game_stats:
                                       fgm, fga, fgp, ftm, fta, ftp, tpm, tpa, tpp, offReb,
                                       defReb, totReb, assists, pFouls, steals, turnovers,
                                       blocks, plusMinus, min]
+
+checks for raw_teams:
+  - duplicate_count(id) = 0
+  - missing_count(id) = 0
+  - schema:
+      warn:
+        when schema changes: any
+      fail:
+        when required column missing: [id, name, nickname, code, city, logo, allStar,
+                                      nbaFranchise, conference, division]
+
+checks for raw_players:
+  - missing_count(id) = 0
+  - schema:
+      warn:
+        when schema changes: any
+      fail:
+        when required column missing: [id, firstname, lastname, college, affiliation, team_id, season,
+                                      birth_date, birth_country, nba_start, nba_pro, height_feets,
+                                      height_inches, height_meters, weight_pounds, weight_kilograms,
+                                      jersey, active, pos]

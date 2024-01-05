@@ -8,3 +8,5 @@ sources:
       - name: raw_games
       - name: raw_players_game_stats
       - name: raw_total_game_stats
+      - name: raw_players
+      - name: raw_teams
